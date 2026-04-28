@@ -46,11 +46,11 @@ Launched an EC2 instance on AWS Console as part of incremental cloud infrastruct
 > Chose the `default` security group
 
 **Step 8 — Launch Instance**
-> Reviewed all settings → Clicked **Launch Instance** ✅
+> Reviewed all settings → Clicked **Launch Instance** 
 
 ---
 
-### ✅ Verification Output
+### Verification Output
 
 ```
 -------------------------------------------------------------
