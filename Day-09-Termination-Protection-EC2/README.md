@@ -2,7 +2,7 @@
 
 ---
 
-## 📌 Scenario
+##  Scenario
 
 The Nautilus DevOps team created an EC2 instance **`xfusion-ec2`** in `us-east-1` as part of an active cloud migration — but forgot to enable **Termination Protection**. Without it, the instance could be accidentally deleted at any point, causing irreversible data loss during the migration window.
 
@@ -22,9 +22,9 @@ It acts as a safety lock. The instance can still be stopped or rebooted normally
 
 | Action | What Happens | Reversible? |
 |--------|-------------|-------------|
-| Reboot | Restarts OS, IP preserved | ✅ Yes |
-| Stop | Powers down, EBS volumes kept | ✅ Yes |
-| **Terminate** | **Permanently destroys instance + root EBS** | ❌ No |
+| Reboot | Restarts OS, IP preserved | Yes |
+| Stop | Powers down, EBS volumes kept | Yes |
+| **Terminate** | **Permanently destroys instance + root EBS** |  No |
 
 ### How it works under the hood
 
