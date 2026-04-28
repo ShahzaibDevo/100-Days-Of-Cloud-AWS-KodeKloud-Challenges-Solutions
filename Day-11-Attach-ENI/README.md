@@ -54,7 +54,7 @@ Every EC2 instance is created with **at least ONE primary network interface** au
 |----------|---------|
 | **Device Index** | 0 (primary slot) |
 | **Status** | Always `in-use` when instance is running |
-| **Can be Detached?** | ❌ NO (you cannot remove the primary ENI) |
+| **Can be Detached?** |  NO (you cannot remove the primary ENI) |
 | **Created** | Automatically with the instance |
 
 
