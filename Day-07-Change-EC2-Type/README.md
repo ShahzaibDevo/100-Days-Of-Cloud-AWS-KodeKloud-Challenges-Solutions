@@ -32,7 +32,6 @@ If it shows **Initializing**, wait until it reads **2/2 checks passed** before p
 Select the instance checkbox → **Instance state** → **Stop instance** → confirm.  
 Wait for state: `stopped`.
 
-> ⚠️ You cannot change the instance type while it is running. The stop step is mandatory.
 
 ### Step 5 — Change instance type
 
