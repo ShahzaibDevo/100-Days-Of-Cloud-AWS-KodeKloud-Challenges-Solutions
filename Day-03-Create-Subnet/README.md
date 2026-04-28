@@ -167,7 +167,7 @@ VPC Dashboard
 In the **VPC ID** dropdown:
 - Select the **Default VPC**
 
-> 💡 The default VPC will be labeled `default` and shows CIDR `172.31.0.0/16`
+
 
 ---
 
