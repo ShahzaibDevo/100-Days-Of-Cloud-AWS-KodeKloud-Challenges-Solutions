@@ -1,7 +1,7 @@
 ## Day 8: Enable Stop Protection for EC2 Instance
 
 ### 🎯 Objective
-Enable stop protection for an EC2 instance named `xfusion-ec2` in `us-east-1` region using AWS Console UI.
+Enable stop protection for an EC2 instance named `xfusion-ec2` in `us-east-1` region using a  AWS Console UI.
 
 ---
 
