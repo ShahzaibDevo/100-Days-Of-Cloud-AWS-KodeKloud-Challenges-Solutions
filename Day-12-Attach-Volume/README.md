@@ -97,7 +97,7 @@ Region: us-east-1
 
 ### Step 5: Attach Volume to Instance
 
-#### **Method A: From Volumes Console (Recommended)** ⭐
+#### **Method A: From Volumes Console (Recommended)** 
 
 1. Click on `xfusion-volume` to select it
 2. Click **Actions** dropdown menu (top-right)
@@ -125,7 +125,7 @@ Region: us-east-1
 1. Go to **Volumes** in the sidebar
 2. Click on `xfusion-volume`
 3. Look at the **Details** tab:
-   - **State:** Should show `In-use` ✅
+   - **State:** Should show `In-use` 
    - **Attachments:** Should show `xfusion-ec2` with device `/dev/sdb`
 
 #### **Check via Instance Console:**
