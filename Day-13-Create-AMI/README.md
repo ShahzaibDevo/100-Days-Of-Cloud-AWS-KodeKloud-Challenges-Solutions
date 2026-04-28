@@ -1,6 +1,6 @@
 # Day 13: Create AMI from EC2 Instance
 
-## What is an AMI? (Simple Definition)
+## What is an AMI? 
 
 **AMI = Amazon Machine Image**
 
