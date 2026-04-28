@@ -233,10 +233,6 @@ This allows the instance to reach the internet for updates, API calls, etc.
 
 ---
 
-## 🔍 Verification
-
-After completing the steps, verify your Security Group in the AWS Console by navigating to **EC2 → Network & Security → Security Groups** and clicking on `nautilus-sg`.
-
 ### ✅ Verification Checklist
 
 ```
