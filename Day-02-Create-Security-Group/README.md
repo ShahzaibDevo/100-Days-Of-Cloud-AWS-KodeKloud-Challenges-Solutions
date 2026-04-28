@@ -229,7 +229,7 @@ This allows the instance to reach the internet for updates, API calls, etc.
 
 1. Click the orange **Create security group** button at the bottom
 2. You will be redirected to the Security Group detail page
-3. Confirm the group was created successfully — you should see a **Security group ID** like `sg-0abc123def456`
+3. Confirm the group was created successfully — you should see a new **Security group ID** like `sg-0abc123def456`
 
 ---
 
