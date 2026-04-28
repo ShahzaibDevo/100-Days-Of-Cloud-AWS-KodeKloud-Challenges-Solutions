@@ -48,16 +48,16 @@ Every change is recorded. Nothing is truly lost.
 WITHOUT Versioning:
 ─────────────────────────────────────────
   Upload report.pdf (v1)   →  [report.pdf]
-  Upload report.pdf (v2)   →  [report.pdf]  ← v1 is GONE forever ❌
-  Delete report.pdf        →  NOTHING left  ❌
+  Upload report.pdf (v2)   →  [report.pdf]  ← v1 is GONE forever 
+  Delete report.pdf        →  NOTHING left  
 
 WITH Versioning ENABLED:
 ─────────────────────────────────────────
-  Upload report.pdf (v1)   →  [report.pdf - ID: aaa111]  ✅
-  Upload report.pdf (v2)   →  [report.pdf - ID: bbb222]  ✅
-                               [report.pdf - ID: aaa111]  ✅ still saved!
-  Delete report.pdf        →  Adds a Delete Marker only  ✅
-                               Previous versions still recoverable! ✅
+  Upload report.pdf (v1)   →  [report.pdf - ID: aaa111]  
+  Upload report.pdf (v2)   →  [report.pdf - ID: bbb222]  
+                               [report.pdf - ID: aaa111]   still saved!
+  Delete report.pdf        →  Adds a Delete Marker only  
+                               Previous versions still recoverable! 
 ```
 
 ---
