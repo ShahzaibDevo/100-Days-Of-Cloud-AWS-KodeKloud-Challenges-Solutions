@@ -182,3 +182,23 @@ aws s3 sync s3://datacenter-s3-24359 s3://datacenter-sync-30951 --dryrun
 ---
 
 
+//                                 //
+
+linkedin post
+
+
+☁️ **100 Days of Cloud (AWS) — Day 23 | Data Migration Between S3 Buckets Using AWS CLI**
+
+Today’s lab focused on performing secure **data migration between S3 buckets** using the AWS CLI — a real-world DevOps task used in cloud environments.
+
+🔹 Created a new private S3 bucket
+🔹 Migrated complete data from existing bucket
+🔹 Used AWS CLI for automated sync
+🔹 Verified data consistency and integrity
+🔹 Ensured zero data loss during migration
+
+This lab helped me understand how organizations safely move large-scale cloud data while maintaining security and reliability.
+
+Every day brings me closer to mastering Cloud & DevOps 🚀
+
+#100DaysOfCloud #AWS #AmazonS3 #DevOps #CloudComputing #AWSCLI #LearningJourney

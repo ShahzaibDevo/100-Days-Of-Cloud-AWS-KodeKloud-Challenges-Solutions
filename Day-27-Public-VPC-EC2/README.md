@@ -1,14 +1,4 @@
-Here is a **clean professional GitHub README** for your **Day 27 Lab** with:
 
-✅ Step-by-step guide
-✅ Simple definitions
-✅ Architecture explanation
-✅ Commands
-✅ Real DevOps concepts
-
-You can directly upload this to GitHub.
-
----
 
 # ☁️ 100 Days of Cloud (AWS) — Day 27
 
