@@ -1,5 +1,5 @@
 
-# 🚀 Day 30: Enable Internet Access for Private EC2 using NAT Instance
+# Day 30: Enable Internet Access for Private EC2 using NAT Instance
 
 ## Project Overview
 This project demonstrates how to enable internet access for a **private EC2 instance** using a **NAT Instance** in AWS. The setup ensures secure architecture where the private instance has outbound internet access but remains inaccessible from the public internet.
@@ -136,7 +136,7 @@ If responses are received → setup is successful
 
 ---
 
-## 🚀 Real-World Use Case
+## Real-World Use Case
 
 This architecture is widely used in:
 
