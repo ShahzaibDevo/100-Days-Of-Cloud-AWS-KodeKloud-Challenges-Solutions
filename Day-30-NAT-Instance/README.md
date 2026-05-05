@@ -1,214 +1,157 @@
-📖 Overview
-The Nautilus DevOps team needed to enable internet access for an EC2 instance running in a private subnet. The instance needed to upload a test file to a public S3 bucket. To minimize costs, a NAT Instance was used instead of a NAT Gateway.
 
-## Objectives
+# 🚀 Day 30: Enable Internet Access for Private EC2 using NAT Instance
 
-1-Create a new public subnet datacenter-pub-subnet
-2-Launch a NAT Instance datacenter-nat-instance in the public subnet
-3-Configure iptables for NAT/masquerading
-4-Disable Source/Destination check on NAT instance
-5-Update private subnet route table to route via NAT
-6-Verify datacenter-test.txt appears in S3 bucket
+## Project Overview
+This project demonstrates how to enable internet access for a **private EC2 instance** using a **NAT Instance** in AWS. The setup ensures secure architecture where the private instance has outbound internet access but remains inaccessible from the public internet.
 
+---
 
+## Objective
+- Create a secure VPC architecture
+- Enable internet access for private EC2 using NAT Instance
+- Understand routing, NAT, and VPC networking concepts
 
-## Architecture
-┌─────────────────────────────────────────────────────────────────────┐
-│                        datacenter-priv-vpc                          │
-│                                                                     │
-│  ┌──────────────────────────────┐  ┌──────────────────────────────┐ │
-│  │   Private Subnet             │  │   Public Subnet              │ │
-│  │   datacenter-priv-subnet     │  │   datacenter-pub-subnet      │ │
-│  │   (e.g. 10.0.1.0/24)        │  │   (e.g. 10.0.2.0/24)        │ │
-│  │                              │  │                              │ │
-│  │  ┌─────────────────────┐     │  │  ┌─────────────────────┐    │ │
-│  │  │ datacenter-priv-ec2 │     │  │  │  datacenter-nat-    │    │ │
-│  │  │  (cron job runs     │─────┼──┼─►│     instance        │    │ │
-│  │  │   every minute)     │     │  │  │  (iptables NAT +    │    │ │
-│  │  └─────────────────────┘     │  │  │   IP forwarding)    │    │ │
-│  │                              │  │  └──────────┬──────────┘    │ │
-│  │  Route: 0.0.0.0/0 →         │  │             │               │ │
-│  │    NAT Instance              │  │  Route: 0.0.0.0/0 → IGW    │ │
-│  └──────────────────────────────┘  └─────────────┼──────────────┘ │
-│                                                   │                │
-└───────────────────────────────────────────────────┼────────────────┘
-                                                    │
-                                         ┌──────────▼──────────┐
-                                         │  Internet Gateway   │
-                                         │   (datacenter-igw)  │
-                                         └──────────┬──────────┘
-                                                    │
-                                               INTERNET
-                                                    │
-                                         ┌──────────▼──────────┐
-                                         │  S3 Bucket          │
-                                         │  datacenter-nat-    │
-                                         │      19979          │
-                                         └─────────────────────┘
+---
 
+## Architecture Design
+- Public Subnet → NAT Instance + Internet Gateway  
+- Private Subnet → EC2 Instance (no public IP)  
+- NAT Instance → Handles outbound internet traffic  
 
-   ## Step-by-Step Guide
-Step 1: Gather Existing Environment Info
-Log into the AWS Console and collect information about the existing environment.
-Navigate to VPC Dashboard:
+---
 
-Go to VPC → Your VPCs
-Find datacenter-priv-vpc
-Note the VPC ID and CIDR block (e.g., 10.0.0.0/16)
+## Step-by-Step Implementation
 
-Check existing subnet:
+### 🔹 1. Create VPC
+- Use existing VPC or create a new one
+- Ensure CIDR block is properly configured
 
-Go to Subnets
-Find datacenter-priv-subnet
-Note the Availability Zone (e.g., us-east-1a) and CIDR (e.g., 10.0.1.0/24)
+---
 
+### 🔹 2. Create Public Subnet
+- Name: `datacenter-pub-subnet`
+- Enable auto-assign public IPv4
 
-You'll need this info to create the public subnet in the same AZ and with a non-overlapping CIDR.
+---
 
+### 🔹 3. Create and Attach Internet Gateway (IGW)
+- Create IGW
+- Attach to VPC
+- Update public route table:
 
- ## Step 2: Create Public Subnet
+```
 
-Go to VPC Dashboard → Subnets → Create subnet
-Configure:
+0.0.0.0/0 → Internet Gateway
 
-VPC ID:              datacenter-priv-vpc
-Subnet name:         datacenter-pub-subnet
-Availability Zone:   us-east-1a  (same as private subnet)
-IPv4 CIDR block:     10.0.2.0/24  (non-overlapping with private subnet)
+````
 
-Click Create subnet 
+---
 
+### 🔹 4. Launch NAT Instance (Amazon Linux 2023)
+- Launch EC2 in public subnet
+- Assign public IP
+- Security Group:
+  - SSH (22)
+  - All outbound traffic allowed
 
- ## Step 3: Create & Attach Internet Gateway
+---
 
-Skip if an IGW already exists and is attached to the VPC.
+### 🔹 5. Install iptables on NAT Instance
+```bash
+sudo dnf install iptables -y
+````
 
-Create IGW:
+---
 
-Go to VPC → Internet Gateways → Create internet gateway
-Name: datacenter-igw
-Click Create internet gateway
+### 🔹 6. Configure NAT (MASQUERADE Rule)
 
-Attach to VPC:
+```bash
+sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+```
 
-Select the new IGW
-Click Actions → Attach to VPC
-Select datacenter-priv-vpc
-Click Attach internet gateway 
+---
 
+### 🔹 7. Enable IP Forwarding
 
- ## Step 4: Configure Route Table for Public Subnet
-Create a new Route Table:
+```bash
+sudo sysctl -w net.ipv4.ip_forward=1
+```
 
-Go to VPC → Route Tables → Create route table
-Configure:
+Make it permanent:
 
-Name:   datacenter-pub-rt
-VPC:    datacenter-priv-vpc
+```bash
+sudo nano /etc/sysctl.conf
+net.ipv4.ip_forward = 1
+```
 
-Click Create route table
+---
 
-Add internet route:
+### 🔹 8. Disable Source/Destination Check
 
-Select datacenter-pub-rt → Routes tab → Edit routes
-Click Add route:
+* Go to EC2 console
+* Select NAT Instance
+* Actions → Networking → Change Source/Destination Check → Disable
 
-Destination:  0.0.0.0/0
-Target:       Internet Gateway → datacenter-igw
+ This step is mandatory for NAT functionality.
 
-Click Save changes
+---
 
-Associate with public subnet:
+### 🔹 9. Configure Private Subnet Route Table
 
-Go to Subnet associations tab → Edit subnet associations
-Check datacenter-pub-subnet
-Click Save associations 
+Update route table:
 
+| Destination | Target          |
+| ----------- | --------------- |
+| 0.0.0.0/0   | NAT Instance ID |
 
-## Step 5: Create Security Group for NAT Instance
+---
 
-Go to EC2 → Security Groups → Create security group
-Configure:
+### 🔹 10. Launch Private EC2 Instance
 
-Name:         datacenter-nat-sg
-Description:  Security group for NAT instance
-VPC:          datacenter-priv-vpc
-Inbound Rules:
-TypeProtocolPort RangeSourceDescriptionAll trafficAllAll10.0.1.0/24 (private subnet CIDR)Allow from private subnetSSHTCP220.0.0.0/0 or Your IPManagement access
-Outbound Rules:
+* Place in private subnet
+* Do NOT assign public IP
 
-Keep default: Allow all outbound traffic
+---
 
+## 🧪 Testing Internet Access
 
-Click Create security group 
+Login to private EC2 and run:
 
+```bash
+ping google.com
+curl https://amazon.com
+```
 
-## Step 6: Launch NAT Instance
+If responses are received → setup is successful 
 
-Go to EC2 → Instances → Launch instances
+---
 
-Basic Settings:
-Name:           datacenter-nat-instance
-AMI:            Amazon Linux 2023 AMI (64-bit x86)
-Instance type:  t2.micro  (or t3.micro)
-Key pair:       Select existing or create new
-Network Settings (click Edit):
-VPC:                    datacenter-priv-vpc
-Subnet:                 datacenter-pub-subnet
-Auto-assign public IP:  Enable 
-Security group:         datacenter-nat-sg (existing)
+## 🧠 Key Concepts Learned
 
-##  User Data :
-#!/bin/bash
-# Update system packages
-yum update -y
+* NAT Instance vs Internet Gateway usage
+* Private subnet architecture in AWS
+* Route table configuration
+* IP forwarding & packet routing
+* Source/Destination check importance
 
-# Install iptables-services (NOT installed by default on Amazon Linux 2023)
-yum install -y iptables-services
+---
 
-# Enable IP forwarding at the kernel level
-echo "net.ipv4.ip_forward=1" >> /etc/sysctl.conf
-sysctl -p
+## 🚀 Real-World Use Case
 
-# Configure iptables MASQUERADE rule for NAT
-# This rewrites the source IP of outgoing packets to the NAT instance's IP
-iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+This architecture is widely used in:
 
-# Allow forwarded traffic
-iptables -F FORWARD
+* Secure backend systems
+* Production VPC designs
+* Microservices architectures
+* Enterprise cloud environments
 
-# Save iptables rules to persist across reboots
-service iptables save
+---
 
-# Enable and start iptables service
-systemctl enable iptables
-systemctl start iptables
+## 🏁 Conclusion
 
-echo "NAT Instance configuration complete!"
+Successfully implemented a secure AWS network where private EC2 instances can access the internet through a NAT Instance without being exposed publicly.
 
+---
 
-## Step 7: Update Private Subnet Route Table
-Direct all internet-bound traffic from the private subnet through the NAT instance.
 
-Go to VPC → Route Tables
-Find the route table associated with datacenter-priv-subnet
-Select it → Routes tab → Edit routes
-Click Add route:
 
-Destination:  0.0.0.0/0
-Target:       Instance → datacenter-nat-instance
-
-Click Save changes 
-
-
- The private EC2's outbound internet traffic will now be routed through the NAT instance.
-
-
- ## Step 8: Verify NAT Configuration
-
-SSH into the NAT instance to confirm the setup is correct.
-bash# SSH into NAT instance (using its public IP)
-ssh -i your-key.pem ec2-user@<NAT-Instance-Public-IP>
-Verify IP forwarding is enabled:
-bashcat /proc/sys/net/ipv4/ip_forward
-# Expected output: 1
