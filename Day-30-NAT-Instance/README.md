@@ -113,7 +113,7 @@ Update route table:
 
 ---
 
-## 🧪 Testing Internet Access
+## Testing Internet Access
 
 Login to private EC2 and run:
 
@@ -126,7 +126,7 @@ If responses are received → setup is successful
 
 ---
 
-## 🧠 Key Concepts Learned
+## Key Concepts Learned
 
 * NAT Instance vs Internet Gateway usage
 * Private subnet architecture in AWS
@@ -147,7 +147,7 @@ This architecture is widely used in:
 
 ---
 
-## 🏁 Conclusion
+##  Conclusion
 
 Successfully implemented a secure AWS network where private EC2 instances can access the internet through a NAT Instance without being exposed publicly.
 
