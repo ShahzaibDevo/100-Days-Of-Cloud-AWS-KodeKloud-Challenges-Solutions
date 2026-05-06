@@ -1,7 +1,7 @@
 
 # 📘 Day 29 — Establishing Secure Communication Between Public and Private VPCs via VPC Peering
 
-## ☁️ Project Overview
+## Project Overview
 
 In this lab, I implemented **AWS VPC Peering** to enable secure communication between two isolated networks:
 
@@ -22,7 +22,7 @@ The objective was to allow the public EC2 instance to securely communicate with 
 
 ---
 
-## 🧠 Architecture Concept
+##  Architecture Concept
 
 ```
 Public EC2 (Default VPC)
@@ -55,11 +55,11 @@ Private EC2 (Private VPC)
 
 ---
 
-# 🚀 Implementation Steps
+#  Implementation Steps
 
 ---
 
-## ✅ Step 1 — Create VPC Peering Connection
+## Step 1 — Create VPC Peering Connection
 
 Navigate:
 
@@ -77,7 +77,7 @@ Create the connection.
 
 ---
 
-## ✅ Step 2 — Accept Peering Request
+## Step 2 — Accept Peering Request
 
 After creation:
 
@@ -93,7 +93,7 @@ Active
 
 ---
 
-## ✅ Step 3 — Update Route Tables
+##  Step 3 — Update Route Tables
 
 VPC Peering works only when routes are configured on **both sides**.
 
@@ -119,7 +119,7 @@ Add route:
 
 ---
 
-## ✅ Step 4 — Configure Security Groups
+##  Step 4 — Configure Security Groups
 
 ### Private EC2 Security Group
 
@@ -134,7 +134,7 @@ This allows communication from the public VPC.
 
 ---
 
-## ✅ Step 5 — Configure SSH Access
+##  Step 5 — Configure SSH Access
 
 On AWS Client host:
 
@@ -161,7 +161,7 @@ Paste public key and save.
 
 ---
 
-## ✅ Step 6 — Test Connectivity
+## Step 6 — Test Connectivity
 
 From **Public EC2**:
 
@@ -177,7 +177,7 @@ ping 10.1.1.25
 
 ---
 
-## ✅ Successful Output
+##  Successful Output
 
 ```
 64 bytes from 10.1.1.xx
