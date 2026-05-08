@@ -1,7 +1,6 @@
 
-# Day 32 — Snapshot and Restoration of an RDS Instance
+## Day 32 — Snapshot and Restoration of an RDS Instance
 
-*(Professional DevOps Lab Documentation — README.md Style)*
 
 ---
 
