@@ -1,14 +1,14 @@
 
-# 🚀 Day 32 — Snapshot and Restoration of an RDS Instance
+# Day 32 — Snapshot and Restoration of an RDS Instance
 
 *(Professional DevOps Lab Documentation — README.md Style)*
 
 ---
 
 ```markdown
-# 🚀 Day 32: Snapshot and Restoration of an RDS Instance (AWS)
+#  Day 32: Snapshot and Restoration of an RDS Instance (AWS)
 
-## 📌 Lab Scenario
+## Lab Scenario
 
 The Nautilus Development Team is preparing for a major database upgrade.
 
@@ -22,7 +22,7 @@ This ensures **data safety**, **rollback capability**, and **deployment confiden
 
 ---
 
-## 🧠 Lab Objective
+##  Lab Objective
 
 As a DevOps Engineer, perform:
 
@@ -33,7 +33,7 @@ As a DevOps Engineer, perform:
 
 ---
 
-## 🧠 Simple Theory
+## Simple Theory
 
 ### What is an RDS Snapshot?
 
@@ -46,12 +46,12 @@ It allows you to:
 - Clone environments
 - Perform disaster recovery
 
-👉 Real Production Rule:
+Real Production Rule:
 **Never modify production database without a backup.**
 
 ---
 
-## 🏗️ Architecture Flow
+##  Architecture Flow
 
 ```
 
@@ -70,17 +70,17 @@ New RDS Instance (nautilus-snapshot-restore)
 
 ---
 
-## ⚙️ Lab Prerequisites
+## Lab Prerequisites
 
 - AWS Console Access
 - Existing RDS Instance: `nautilus-rds`
 - Region: **us-east-1**
 
-⚠️ Only create resources in **us-east-1**
+ Only create resources in **us-east-1**
 
 ---
 
-## 🪜 Step-by-Step Lab Guide
+##  Step-by-Step Lab Guide
 
 ---
 
@@ -109,7 +109,7 @@ Status: Available
 
 ```
 
-⚠️ Wait until status becomes **Available**
+ Wait until status becomes **Available**
 
 ---
 
@@ -130,7 +130,7 @@ Click **Take Snapshot**
 
 ---
 
-### ✅ Verification
+### Verification
 
 Go to:
 
@@ -183,7 +183,7 @@ Keep remaining settings default.
 
 Click:
 
-✅ **Restore DB Instance**
+**Restore DB Instance**
 
 AWS now creates a new database from backup.
 
@@ -220,11 +220,11 @@ Instance Class: db.t3.micro
 
 ```
 
-✅ Lab Completed Successfully
+Lab Completed Successfully
 
 ---
 
-## ✅ Expected Final Resources
+## Expected Final Resources
 
 | Resource | Name |
 |----------|------|
@@ -234,7 +234,7 @@ Instance Class: db.t3.micro
 
 ---
 
-## 💡 Key DevOps Learnings
+## Key DevOps Learnings
 
 - Database backup strategy
 - Safe production upgrade workflow
@@ -244,7 +244,7 @@ Instance Class: db.t3.micro
 
 ---
 
-## 🌍 Real World DevOps Use Cases
+## Real World DevOps Use Cases
 
 DevOps teams use snapshots for:
 
