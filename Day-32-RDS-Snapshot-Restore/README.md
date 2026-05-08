@@ -5,7 +5,6 @@
 
 ---
 
-```markdown
 #  Day 32: Snapshot and Restoration of an RDS Instance (AWS)
 
 ## Lab Scenario
@@ -14,9 +13,9 @@ The Nautilus Development Team is preparing for a major database upgrade.
 
 Before performing any production change, DevOps engineers must:
 
-✅ Create a backup (Snapshot)  
-✅ Restore database from backup  
-✅ Validate restored environment  
+ Create a backup (Snapshot)  
+ Restore database from backup  
+ Validate restored environment  
 
 This ensures **data safety**, **rollback capability**, and **deployment confidence**.
 
