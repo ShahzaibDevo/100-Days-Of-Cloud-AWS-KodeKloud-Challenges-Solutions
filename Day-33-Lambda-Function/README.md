@@ -37,14 +37,14 @@ You only upload code — AWS handles the infrastructure.
 
 ---
 
-### ✅ Step 1 — Login to AWS Console
+### Step 1 — Login to AWS Console
 1. Open AWS Console.
 2. Select Region: **us-east-1 (N. Virginia)**.
 3. Search **Lambda** service.
 
 ---
 
-### ✅ Step 2 — Create IAM Role
+### Step 2 — Create IAM Role
 
 1. Go to **IAM → Roles**.
 2. Click **Create Role**.
@@ -63,7 +63,7 @@ lambda_execution_role
 
 ---
 
-### ✅ Step 3 — Create Lambda Function
+### Step 3 — Create Lambda Function
 
 1. Open **Lambda → Functions**.
 2. Click **Create Function**.
@@ -93,7 +93,7 @@ Use existing role → lambda_execution_role
 
 ---
 
-### ✅ Step 4 — Add Function Code
+###  Step 4 — Add Function Code
 
 Go to **Code** section and replace code with:
 
@@ -109,7 +109,7 @@ Click **Deploy**.
 
 ---
 
-### ✅ Step 5 — Create Test Event
+###  Step 5 — Create Test Event
 
 1. Click **Test**.
 2. Configure test event:
@@ -122,13 +122,13 @@ test-event
 
 ---
 
-### ✅ Step 6 — Run Lambda Function
+###  Step 6 — Run Lambda Function
 
 Click **Test** again.
 
 ---
 
-### ✅ Expected Output
+###  Expected Output
 
 You should see:
 
@@ -142,7 +142,7 @@ You should see:
 Execution status:
 
 ```
-Executing function: succeeded ✅
+Executing function: succeeded 
 ```
 
 ---
@@ -156,11 +156,11 @@ Executing function: succeeded ✅
 ✔ Status Code = 200
 ✔ Greeting message returned
 
-Lab Status → **Completed ✅**
+Lab Status → **Completed **
 
 ---
 
-## 🧠 Key Learning
+## Key Learning
 
 * Serverless removes server management
 * Lambda executes code on demand
