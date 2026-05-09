@@ -1,5 +1,5 @@
-```md
-# 🚀 Day 33 — Create a Lambda Function (AWS Lambda)
+
+# Day 33 — Create a Lambda Function (AWS Lambda)
 
 ## 📘 Lab Overview
 
@@ -9,20 +9,20 @@ In this lab, we created a simple **AWS Lambda function** that returns a custom g
 
 ---
 
-## ☁️ What is AWS Lambda? (Simple Theory)
+## What is AWS Lambda? 
 
 **AWS Lambda** is a serverless compute service that allows you to run code without managing servers.
 
-✅ No server provisioning  
-✅ Automatic scaling  
-✅ Pay only for execution time  
-✅ Event-driven execution  
+ No server provisioning  
+ Automatic scaling  
+ Pay only for execution time  
+Event-driven execution  
 
 You only upload code — AWS handles the infrastructure.
 
 ---
 
-## 🎯 Lab Objectives
+##  Lab Objectives
 
 - Create Lambda Function → `xfusion-lambda`
 - Runtime → **Python**
@@ -33,7 +33,7 @@ You only upload code — AWS handles the infrastructure.
 
 ---
 
-## 🛠️ Step-by-Step Implementation
+##  Step-by-Step Implementation
 
 ---
 
