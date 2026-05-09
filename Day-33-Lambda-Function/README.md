@@ -170,7 +170,7 @@ Lab Status → **Completed **
 
 ---
 
-## 🌍 Real-World Use Cases
+##  Real-World Use Cases
 
 * Backend APIs
 * Automation scripts
@@ -181,14 +181,3 @@ Lab Status → **Completed **
 
 ---
 
-## 📅 100 Days of Cloud — Progress
-
-**Day 33 Complete ✅**
-Learning serverless architecture step by step through hands-on AWS labs.
-
----
-
-⭐ If this helped you, give the repo a star!
-
-```
-```
