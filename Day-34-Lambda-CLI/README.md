@@ -1,7 +1,7 @@
 
 # Day 34 — Create AWS Lambda Function Using AWS CLI
 
-## 📘 Lab Overview
+## Lab Overview
 
 In this lab, the Nautilus DevOps Team deployed a **serverless Lambda function using AWS CLI** instead of the AWS Console.
 
@@ -9,18 +9,18 @@ This demonstrates real DevOps automation where infrastructure is created directl
 
 ---
 
-## ☁️ Simple Theory
+##  Simple Theory
 
 **AWS Lambda** allows you to run code without managing servers.
 
 Using **AWS CLI**, engineers can automate deployments, integrate CI/CD pipelines, and avoid manual console work.
 
-👉 Console = Manual setup  
-👉 CLI = Automation & DevOps way
+ Console = Manual setup  
+CLI = Automation & DevOps way
 
 ---
 
-## 🎯 Lab Objectives
+##  Lab Objectives
 
 - Create Python script → `lambda_function.py`
 - Return message → **Welcome to KKE AWS Labs!**
