@@ -32,11 +32,11 @@ CLI = Automation & DevOps way
 
 ---
 
-## 🛠️ Step-by-Step Guide
+##  Step-by-Step Guide
 
 ---
 
-## ✅ Step 1 — Login to aws-client Host
+##  Step 1 — Login to aws-client Host
 
 Open terminal on **aws-client** machine.
 
@@ -46,11 +46,11 @@ Verify CLI access:
 aws sts get-caller-identity
 ````
 
-If account details appear → CLI ready ✅
+If account details appear → CLI ready 
 
 ---
 
-## ✅ Step 2 — Create Python Script
+##  Step 2 — Create Python Script
 
 Create file:
 
@@ -72,7 +72,7 @@ Save file.
 
 ---
 
-## ✅ Step 3 — Zip the Python Script
+##  Step 3 — Zip the Python Script
 
 Create deployment package:
 
