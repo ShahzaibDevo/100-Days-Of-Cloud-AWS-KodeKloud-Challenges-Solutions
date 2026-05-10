@@ -95,7 +95,7 @@ function.zip
 
 ---
 
-## ✅ Step 4 — Get IAM Role ARN
+##  Step 4 — Get IAM Role ARN
 
 Run:
 
@@ -113,7 +113,7 @@ arn:aws:iam::123456789012:role/lambda_execution_role
 
 ---
 
-## ✅ Step 5 — Create Lambda Function Using CLI
+##  Step 5 — Create Lambda Function Using CLI
 
 Run command:
 
@@ -126,11 +126,11 @@ aws lambda create-function \
 --zip-file fileb://function.zip
 ```
 
-✅ Lambda function created.
+ Lambda function created.
 
 ---
 
-## ✅ Step 6 — Verify Lambda Function
+## Step 6 — Verify Lambda Function
 
 Check function:
 
@@ -146,7 +146,7 @@ devops-lambda-cli
 
 ---
 
-## ✅ Step 7 — Test Lambda Function (CLI)
+## Step 7 — Test Lambda Function (CLI)
 
 Invoke function:
 
@@ -173,7 +173,7 @@ Expected result:
 
 ---
 
-## ✅ Verification Checklist
+## Verification Checklist
 
 ✔ Python script created
 ✔ Zip package prepared
@@ -182,11 +182,10 @@ Expected result:
 ✔ Function executed successfully
 ✔ Status Code 200 returned
 
-🎉 **Lab Completed Successfully**
-
+ 
 ---
 
-## 🧠 Key Learning
+## Key Learning
 
 * AWS CLI enables automation
 * Lambda deployment without console
@@ -196,7 +195,7 @@ Expected result:
 
 ---
 
-## 🌍 Real-World DevOps Usage
+## Real-World DevOps Usage
 
 * CI/CD deployments
 * Automated infrastructure provisioning
