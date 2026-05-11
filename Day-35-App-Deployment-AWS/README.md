@@ -1,12 +1,12 @@
 
-# 🚀 Day 35: Deploying and Managing Applications on AWS (EC2 + RDS + PHP)
+#  Day 35: Deploying and Managing Applications on AWS (EC2 + RDS + PHP)
 
-## 📌 Overview
+## Overview
 This project demonstrates how to deploy a PHP web application on AWS EC2 and connect it securely with an AWS RDS MySQL database.
 
 ---
 
-## 🎯 Objective
+## Objective
 - Launch AWS EC2 instance
 - Create AWS RDS MySQL database
 - Establish secure EC2 ↔ RDS connection
@@ -15,7 +15,7 @@ This project demonstrates how to deploy a PHP web application on AWS EC2 and con
 
 ---
 
-## 🏗 Architecture
+## Architecture
 
 ```
 
@@ -25,7 +25,7 @@ User → EC2 (Apache + PHP) → RDS MySQL Database
 
 ---
 
-## ☁️ AWS Resources Used
+##  AWS Resources Used
 
 - EC2 Instance (Ubuntu 22.04)
 - RDS MySQL (db.t3.micro)
@@ -34,7 +34,7 @@ User → EC2 (Apache + PHP) → RDS MySQL Database
 
 ---
 
-## 🗄️ STEP 1: Create RDS Database
+## STEP 1: Create RDS Database
 
 ### Configuration:
 - DB Identifier: `devops-rds`
@@ -47,7 +47,7 @@ User → EC2 (Apache + PHP) → RDS MySQL Database
 
 ---
 
-## 🔐 STEP 2: Configure Security Groups
+##  STEP 2: Configure Security Groups
 
 ### RDS Security Group:
 - Allow inbound:
@@ -62,7 +62,7 @@ User → EC2 (Apache + PHP) → RDS MySQL Database
 
 ---
 
-## 🖥️ STEP 3: Setup EC2 Instance
+##  STEP 3: Setup EC2 Instance
 
 ```bash
 sudo apt update -y
@@ -73,7 +73,7 @@ sudo systemctl enable apache2
 
 ---
 
-## 📁 STEP 4: Deploy Application
+##  STEP 4: Deploy Application
 
 Place `index.php` in:
 
@@ -83,7 +83,7 @@ Place `index.php` in:
 
 ---
 
-## 🧠 STEP 5: PHP Database Connection Code
+##  STEP 5: PHP Database Connection Code
 
 ```php
 <?php
@@ -104,7 +104,7 @@ echo "Connected successfully<br />";
 
 ---
 
-## 🌐 STEP 6: Test Application
+##  STEP 6: Test Application
 
 Open browser:
 
@@ -114,7 +114,7 @@ http://<EC2-PUBLIC-IP>/index.php
 
 ---
 
-## 🎯 Expected Output
+##  Expected Output
 
 ```
 Connected successfully
@@ -122,7 +122,7 @@ Connected successfully
 
 ---
 
-## 🔥 Key Learnings
+## Key Learnings
 
 * AWS EC2 deployment
 * AWS RDS MySQL setup
