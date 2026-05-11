@@ -43,7 +43,7 @@ User → EC2 (Apache + PHP) → RDS MySQL Database
 - Master Username: `devops_admin`
 - Database Name: `devops_db`
 - Storage: 5 GiB (gp2)
-- Public Access: ❌ Disabled (Private DB)
+- Public Access: Disabled (Private DB)
 
 ---
 
