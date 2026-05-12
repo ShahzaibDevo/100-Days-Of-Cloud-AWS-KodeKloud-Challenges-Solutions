@@ -49,9 +49,9 @@ To deploy an EC2-based web server and configure an **Application Load Balancer (
 
 ---
 
-# 🧩 Step-by-Step Lab Guide
+#  Step-by-Step Lab Guide
 
-## 🟡 Step 1: Create Security Group (nautilus-sg)
+##  Step 1: Create Security Group (nautilus-sg)
 
 * Open EC2 Dashboard → Security Groups
 * Create Security Group:
@@ -64,13 +64,13 @@ To deploy an EC2-based web server and configure an **Application Load Balancer (
 
 ---
 
-## 🟢 Step 2: Launch EC2 Instance
+##  Step 2: Launch EC2 Instance
 
 * Name: `nautilus-ec2`
 * AMI: Ubuntu
 * Security Group: `nautilus-sg`
 
-### 🧠 User Data Script:
+### User Data Script:
 
 ```bash
 #!/bin/bash
@@ -82,7 +82,7 @@ systemctl enable nginx
 
 ---
 
-## 🔵 Step 3: Create Target Group
+##  Step 3: Create Target Group
 
 * Name: `nautilus-tg`
 * Type: Instance
@@ -92,7 +92,7 @@ systemctl enable nginx
 
 ---
 
-## 🟣 Step 4: Create Application Load Balancer
+##  Step 4: Create Application Load Balancer
 
 * Name: `nautilus-alb`
 * Scheme: Internet-facing
@@ -102,7 +102,7 @@ systemctl enable nginx
 
 ---
 
-## 🟠 Step 5: Configure Listener
+##  Step 5: Configure Listener
 
 * Protocol: HTTP
 * Port: 80
@@ -110,7 +110,7 @@ systemctl enable nginx
 
 ---
 
-## 🔴 Step 6: Test Target Health
+## 🔴Step 6: Test Target Health
 
 Go to Target Group:
 
@@ -118,7 +118,7 @@ Go to Target Group:
 
 ---
 
-## 🟤 Step 7: Access Application
+##  Step 7: Access Application
 
 Copy ALB DNS:
 
@@ -134,7 +134,7 @@ http://nautilus-alb-xxxx.us-east-1.elb.amazonaws.com
 
 ---
 
-# 🎉 Expected Result
+#  Expected Result
 
 You should see:
 
@@ -144,7 +144,7 @@ Welcome to nginx!
 
 ---
 
-# 🧠 Key Learning
+#  Key Learning
 
 * Load Balancer does NOT send traffic directly to EC2
 * Target Groups manage backend servers + health checks
