@@ -1,11 +1,4 @@
-Here’s a **complete GitHub README.md for Day 36** with:
 
-✅ Simple architecture diagram (ASCII)
-✅ Full step-by-step lab guide
-✅ Clean DevOps structure
-✅ Professional portfolio format
-
----
 
 # 🚀 Day 36 — Load Balancing EC2 Instances with Application Load Balancer (AWS)
 
