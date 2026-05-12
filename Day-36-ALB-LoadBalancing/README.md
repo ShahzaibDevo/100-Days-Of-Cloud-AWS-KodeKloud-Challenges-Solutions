@@ -153,7 +153,7 @@ Welcome to nginx!
 
 ---
 
-# ⚫ Final Architecture Flow
+#  Final Architecture Flow
 
 ```
 User → ALB → Target Group → EC2 → Nginx Response
@@ -161,7 +161,7 @@ User → ALB → Target Group → EC2 → Nginx Response
 
 ---
 
-# 🚀 Outcome
+##  Outcome
 
 ✔ Successfully deployed a load-balanced architecture
 ✔ Understood ALB + Target Group workflow
@@ -170,17 +170,4 @@ User → ALB → Target Group → EC2 → Nginx Response
 
 ---
 
-# 🏷️ Tags
 
-`#AWS` `#CloudComputing` `#DevOps` `#EC2` `#ALB`
-`#100DaysOfCloud` `#Nginx` `#CloudEngineer` `#DevOpsJourney`
-
----
-
-If you want next upgrade, I can also:
-
-🚀 Add **real image architecture diagram (PNG for GitHub)**
-🔥 Convert this into **portfolio-level README (with badges + banner)**
-📌 Or merge Day 1–36 into a **complete cloud engineer portfolio**
-
-Just tell me 👍
