@@ -1,20 +1,19 @@
 
+#  Day 36 — Load Balancing EC2 Instances with Application Load Balancer (AWS)
 
-# 🚀 Day 36 — Load Balancing EC2 Instances with Application Load Balancer (AWS)
-
-## ☁️ 100 Days of Cloud (AWS Journey)
+##  100 Days of Cloud (AWS Journey)
 
 This project demonstrates how to deploy and manage a **scalable web application architecture** using an **Application Load Balancer (ALB)** with EC2 and Nginx.
 
 ---
 
-# 🎯 Objective
+#  Objective
 
 To deploy an EC2-based web server and configure an **Application Load Balancer (ALB)** with a **Target Group** to distribute traffic and ensure high availability.
 
 ---
 
-# 🏗️ Architecture Diagram (Simple)
+#  Architecture Diagram (Simple)
 
 ```
                 Internet
@@ -40,7 +39,7 @@ To deploy an EC2-based web server and configure an **Application Load Balancer (
 
 ---
 
-# ⚙️ AWS Services Used
+#  AWS Services Used
 
 * **Amazon Web Services**
 * **Amazon EC2** → Web server hosting
