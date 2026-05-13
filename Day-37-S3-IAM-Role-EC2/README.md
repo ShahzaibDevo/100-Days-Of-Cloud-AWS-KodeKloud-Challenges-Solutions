@@ -179,7 +179,7 @@ ssh -i ~/.ssh/id_rsa ubuntu@<EC2-PUBLIC-IP>
 
 ---
 
-## ⚫ Step 8 — Test S3 Access
+##  Step 8 — Test S3 Access
 
 Create file:
 
@@ -201,7 +201,7 @@ aws s3 ls s3://xfusion-s3-390964011108/
 
 ---
 
-# 🎉 Result
+#  Result
 
 ✔ EC2 successfully accessed S3
 ✔ File uploaded successfully
@@ -210,7 +210,7 @@ aws s3 ls s3://xfusion-s3-390964011108/
 
 ---
 
-# 🔐 Key Learning
+#  Key Learning
 
 * IAM Role = Temporary secure access
 * IAM Policy = Permission rules
@@ -219,7 +219,7 @@ aws s3 ls s3://xfusion-s3-390964011108/
 
 ---
 
-# 🧠 Final Architecture
+#  Final Architecture
 
 ```
 User → EC2 → IAM Role → IAM Policy → S3
@@ -227,18 +227,4 @@ User → EC2 → IAM Role → IAM Policy → S3
 
 ---
 
-# 🏷️ Tags
 
-`#AWS` `#DevOps` `#CloudComputing` `#EC2` `#S3`
-`#IAM` `#100DaysOfCloud` `#LearningInPublic` `#CloudEngineer`
-
----
-
-If you want next, I can also:
-
-🔥 Turn this into a **viral LinkedIn post**
-🔥 Add your **generated architecture image into README format**
-🔥 Create **Day 38 full lab guide**
-🔥 Or make **interview Q&A from this lab**
-
-Just tell me 👍
