@@ -11,7 +11,7 @@ This project demonstrates how to securely connect an **EC2 instance with an S3 b
 
 To allow an EC2 instance to securely:
 
-* Upload files to S3
+* Upload files to S3 
 * Read files from S3
 * List S3 bucket contents
 
