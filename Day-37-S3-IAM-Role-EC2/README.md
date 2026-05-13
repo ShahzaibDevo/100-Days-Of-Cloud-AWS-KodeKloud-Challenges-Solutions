@@ -1,6 +1,3 @@
-Here’s a **complete GitHub README (Day 37 Project)** with **theory + full step-by-step lab guide** in a clean DevOps format 👇
-
----
 
 # 🚀 Day 37 — EC2 to S3 Access using IAM Role (AWS)
 
