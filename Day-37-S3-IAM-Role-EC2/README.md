@@ -1,13 +1,13 @@
 
-# 🚀 Day 37 — EC2 to S3 Access using IAM Role (AWS)
+#  Day 37 — EC2 to S3 Access using IAM Role (AWS)
 
-## ☁️ 100 Days of Cloud (DevOps Journey)
+##  100 Days of Cloud (DevOps Journey)
 
 This project demonstrates how to securely connect an **EC2 instance with an S3 bucket** using **IAM Role-based access instead of access keys**.
 
 ---
 
-# 🎯 Objective
+#  Objective
 
 To allow an EC2 instance to securely:
 
@@ -19,19 +19,19 @@ WITHOUT storing credentials inside the server.
 
 ---
 
-# 🧠 Theory (Concept Understanding)
+#  Theory (Concept Understanding)
 
-## 🔐 What is IAM Role?
+##  What is IAM Role?
 
 An **IAM Role** is a secure identity in AWS that provides **temporary permissions** to AWS services like EC2.
 
-👉 No username
-👉 No password
-👉 No access keys
+ No username
+ No password
+ No access keys
 
 ---
 
-## ☁️ Why S3 + EC2 Integration?
+##  Why S3 + EC2 Integration?
 
 **Amazon S3** is used to store files, backups, logs, and application data.
 
@@ -39,7 +39,7 @@ An **IAM Role** is a secure identity in AWS that provides **temporary permission
 
 ---
 
-## 🔐 Why IAM Role is Important?
+##  Why IAM Role is Important?
 
 Instead of using risky access keys:
 
@@ -52,7 +52,7 @@ We use:
 
 ---
 
-## 🔄 Architecture Flow
+##  Architecture Flow
 
 ```
 Developer (aws-client)
@@ -68,22 +68,22 @@ S3 Bucket (xfusion-s3)
 
 ---
 
-# 🧩 Step-by-Step Lab Guide
+#  Step-by-Step Lab Guide
 
 ---
 
-## 🟡 Step 1 — Create SSH Key (aws-client)
+##  Step 1 — Create SSH Key (aws-client)
 
 ```bash
 ssh-keygen -t rsa
 cat ~/.ssh/id_rsa.pub
 ```
 
-👉 Copy public key
+ Copy public key
 
 ---
 
-## 🟢 Step 2 — Add Key to EC2
+##  Step 2 — Add Key to EC2
 
 SSH into EC2:
 
