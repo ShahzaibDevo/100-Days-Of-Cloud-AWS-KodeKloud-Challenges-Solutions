@@ -109,7 +109,7 @@ chmod 600 ~/.ssh/authorized_keys
 
 ---
 
-## 🔵 Step 3 — Create S3 Bucket
+##  Step 3 — Create S3 Bucket
 
 Go to AWS Console:
 
@@ -119,7 +119,7 @@ Go to AWS Console:
 
 ---
 
-## 🟣 Step 4 — Create IAM Policy
+##  Step 4 — Create IAM Policy
 
 Create policy with S3 permissions:
 
@@ -151,7 +151,7 @@ xfusion-policy
 
 ---
 
-## 🟠 Step 5 — Create IAM Role
+##  Step 5 — Create IAM Role
 
 * Trusted entity: EC2
 * Attach policy: `xfusion-policy`
@@ -159,7 +159,7 @@ xfusion-policy
 
 ---
 
-## 🔴 Step 6 — Attach Role to EC2
+## Step 6 — Attach Role to EC2
 
 EC2 → Actions → Security → Modify IAM Role
 
@@ -171,7 +171,7 @@ xfusion-role
 
 ---
 
-## 🟤 Step 7 — SSH into EC2
+##  Step 7 — SSH into EC2
 
 ```bash
 ssh -i ~/.ssh/id_rsa ubuntu@<EC2-PUBLIC-IP>
