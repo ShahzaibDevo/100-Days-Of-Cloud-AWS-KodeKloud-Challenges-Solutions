@@ -1,17 +1,15 @@
-Here is a **complete professional GitHub README.md post** for your lab 👇 (ready to copy-paste)
 
----
 
-# 🚀 Day 38: Deploying Containerized Applications with Amazon ECS (Fargate)
+#  Day 38: Deploying Containerized Applications with Amazon ECS (Fargate)
 
-## 📌 Project Overview
+##  Project Overview
 
 This project demonstrates how to deploy a **containerized application** on **Amazon Elastic Container Service (ECS)** using **AWS Fargate (serverless containers)**.
 The lab covers end-to-end deployment including container setup, ECS task definition, networking, and public access via IP address.
 
 ---
 
-# 🎯 Objective
+#  Objective
 
 * Deploy a Docker container on AWS without managing servers
 * Use ECS Fargate for serverless container orchestration
@@ -20,7 +18,7 @@ The lab covers end-to-end deployment including container setup, ECS task definit
 
 ---
 
-# 🧠 Theory (Important Concepts)
+#  Theory (Important Concepts)
 
 ## 📦 Amazon ECS (Elastic Container Service)
 
@@ -28,7 +26,7 @@ A fully managed container orchestration service that helps run Docker containers
 
 ---
 
-## ⚡ AWS Fargate
+##  AWS Fargate
 
 A serverless compute engine for containers where:
 
