@@ -36,7 +36,7 @@ A serverless compute engine for containers where:
 
 ---
 
-## 🗂️ Task Definition
+##  Task Definition
 
 A blueprint for running containers in ECS:
 
@@ -47,7 +47,7 @@ A blueprint for running containers in ECS:
 
 ---
 
-## 🌐 Networking (awsvpc Mode)
+##  Networking (awsvpc Mode)
 
 Each task gets:
 
@@ -57,7 +57,7 @@ Each task gets:
 
 ---
 
-## 🔐 Security Groups
+##  Security Groups
 
 Virtual firewall controlling inbound/outbound traffic:
 
@@ -66,13 +66,13 @@ Virtual firewall controlling inbound/outbound traffic:
 
 ---
 
-## 🐳 Amazon ECR
+## Amazon ECR
 
 A private Docker registry used to store and manage container images.
 
 ---
 
-# 🛠️ Lab Architecture Flow
+#  Lab Architecture Flow
 
 ```
 Docker Image → Amazon ECR → ECS Task Definition → Fargate Service → Public IP Access
@@ -80,9 +80,9 @@ Docker Image → Amazon ECR → ECS Task Definition → Fargate Service → Publ
 
 ---
 
-# ⚙️ Step-by-Step Lab Implementation
+#  Step-by-Step Lab Implementation
 
-## ✅ Step 1: Create Docker Image
+##  Step 1: Create Docker Image
 
 Build application image locally:
 
@@ -92,7 +92,7 @@ docker build -t devops-app .
 
 ---
 
-## ✅ Step 2: Push Image to Amazon ECR
+##  Step 2: Push Image to Amazon ECR
 
 * Create ECR repository
 * Authenticate Docker
@@ -105,7 +105,7 @@ docker push <account-id>.dkr.ecr.region.amazonaws.com/devops-ecr:latest
 
 ---
 
-## ✅ Step 3: Create ECS Cluster
+## Step 3: Create ECS Cluster
 
 * Select **Fargate cluster**
 * Name: `devops-cluster`
