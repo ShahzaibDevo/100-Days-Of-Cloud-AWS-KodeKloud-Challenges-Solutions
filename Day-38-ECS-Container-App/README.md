@@ -112,7 +112,7 @@ docker push <account-id>.dkr.ecr.region.amazonaws.com/devops-ecr:latest
 
 ---
 
-## ✅ Step 4: Create Task Definition
+##  Step 4: Create Task Definition
 
 Configure:
 
@@ -124,7 +124,7 @@ Configure:
 
 ---
 
-## ✅ Step 5: Create ECS Service
+##  Step 5: Create ECS Service
 
 * Attach task definition
 * Choose cluster
@@ -133,7 +133,7 @@ Configure:
 
 ---
 
-## ✅ Step 6: Configure Security Group
+## Step 6: Configure Security Group
 
 Allow inbound traffic:
 
@@ -143,7 +143,7 @@ Allow inbound traffic:
 
 ---
 
-## ✅ Step 7: Access Application
+##  Step 7: Access Application
 
 After deployment, access via:
 
@@ -159,7 +159,7 @@ http://18.212.220.132
 
 ---
 
-# 📊 Result
+#  Result
 
 * ECS Task: Running ✔
 * Public IP assigned ✔
@@ -168,7 +168,7 @@ http://18.212.220.132
 
 ---
 
-# 💡 Key Learnings
+#  Key Learnings
 
 ✔ How ECS simplifies container orchestration
 ✔ Importance of task definitions in deployment
