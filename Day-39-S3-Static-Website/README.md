@@ -56,7 +56,7 @@ us-east-1 (N. Virginia)
 
 ---
 
-## ✅ Step 2: Create S3 Bucket
+## Step 2: Create S3 Bucket
 
 Create a bucket with the following name:
 
@@ -64,14 +64,14 @@ Create a bucket with the following name:
 datacenter-web-969113531
 ```
 
-⚠️ Important:
+ Important:
 
 * Uncheck **Block all public access**
 * Confirm public access warning
 
 ---
 
-## ✅ Step 3: Enable Static Website Hosting
+##  Step 3: Enable Static Website Hosting
 
 Go to:
 
@@ -90,7 +90,7 @@ Save changes.
 
 ---
 
-## ✅ Step 4: Upload Website File
+##  Step 4: Upload Website File
 
 Upload file from AWS client machine:
 
@@ -100,7 +100,7 @@ aws s3 cp /root/index.html s3://datacenter-web-969113531/
 
 ---
 
-## ✅ Step 5: Configure Bucket Policy (Public Access)
+##  Step 5: Configure Bucket Policy (Public Access)
 
 Go to:
 
@@ -125,7 +125,7 @@ Add:
 
 ---
 
-## ✅ Step 6: Get Website URL
+##  Step 6: Get Website URL
 
 Go to:
 
@@ -139,7 +139,7 @@ http://datacenter-web-969113531.s3-website-us-east-1.amazonaws.com
 
 ---
 
-## ✅ Step 7: Verify Website
+## Step 7: Verify Website
 
 Open in browser:
 
