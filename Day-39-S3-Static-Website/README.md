@@ -1,14 +1,14 @@
 
-# 🚀 Day 39: Hosting a Static Website on AWS S3
+# Day 39: Hosting a Static Website on AWS S3
 
-## 📌 Project Overview
+## Project Overview
 
 This project demonstrates how to host a **static website** using **Amazon S3**.
 The lab focuses on enabling public access, configuring static website hosting, and deploying an `index.html` file without using any servers.
 
 ---
 
-# 🎯 Objective
+#  Objective
 
 * Create an S3 bucket
 * Enable static website hosting
@@ -18,9 +18,10 @@ The lab focuses on enabling public access, configuring static website hosting, a
 
 ---
 
-# 🧠 Architecture (Simple Flow)
+#  Architecture (Simple Flow)
 
 ```
+
 index.html (Local / AWS Client)
         ↓
 S3 Bucket Upload
@@ -32,7 +33,7 @@ Public Internet Access via S3 URL
 
 ---
 
-# ⚙️ Prerequisites
+#  Prerequisites
 
 * AWS Account (Lab credentials provided)
 * AWS CLI access (AWS client machine)
@@ -41,11 +42,11 @@ Public Internet Access via S3 URL
 
 ---
 
-# 🛠️ Step-by-Step Implementation
+#  Step-by-Step Implementation
 
 ---
 
-## ✅ Step 1: Login to AWS Console
+##  Step 1: Login to AWS Console
 
 Login using provided credentials and select region:
 
