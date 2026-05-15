@@ -175,18 +175,3 @@ Welcome to KKE labs!
 
 ---
 
-
-
----
-
-# 🏷️ Tags
-
-#AWS #S3 #DevOps #CloudComputing #StaticWebsite #Serverless #100DaysOfCloud #AWSProjects #LearningByDoing
-
----
-
-If you want next upgrade, I can also:
-✔ Add architecture diagram image
-✔ Convert this into portfolio project
-✔ Or create interview explanation script
-
