@@ -155,7 +155,7 @@ Welcome to KKE labs!
 
 ---
 
-# 📊 Result
+#  Result
 
 ✔ S3 bucket created successfully
 ✔ Static website hosting enabled
@@ -165,7 +165,7 @@ Welcome to KKE labs!
 
 ---
 
-# 💡 Key Learnings
+#  Key Learnings
 
 * Hosting static websites using serverless architecture
 * Understanding S3 bucket policies
@@ -175,9 +175,7 @@ Welcome to KKE labs!
 
 ---
 
-# 🚀 Conclusion
 
-This lab demonstrates how **Amazon S3 can be used as a fully serverless web hosting solution**, removing the need for traditional web servers while ensuring scalability and availability.
 
 ---
 
