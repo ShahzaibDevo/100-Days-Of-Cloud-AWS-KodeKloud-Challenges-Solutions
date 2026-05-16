@@ -47,7 +47,7 @@ EC2 Instance (Nginx Server)
 
 ---
 
-## ✅ Step 1: Verify EC2 Instance
+##  Step 1: Verify EC2 Instance
 
 Go to:
 
@@ -63,7 +63,7 @@ Public IP: Available
 
 ---
 
-## ✅ Step 2: Check Security Group
+##  Step 2: Check Security Group
 
 Ensure inbound rules allow:
 
@@ -74,13 +74,13 @@ Ensure inbound rules allow:
 
 ---
 
-## ⚠️ Step 3: Identify the Issue
+##  Step 3: Identify the Issue
 
 Problem observed:
 
 * EC2 instance running ✔
 * Nginx running ✔
-* Website not accessible ❌
+* Website not accessible 
 
 AWS error:
 
@@ -88,7 +88,7 @@ AWS error:
 
 ---
 
-## ❌ Root Cause
+##  Root Cause
 
 * Route table contains invalid or missing route
 * Internet Gateway not properly attached or configured
@@ -109,7 +109,7 @@ Check:
 
 If not attached:
 
-👉 Attach to VPC
+ Attach to VPC
 
 ---
 
@@ -121,7 +121,7 @@ Go to:
 
 Edit routes:
 
-Remove broken route ❌
+Remove broken route 
 
 Add correct route:
 
@@ -176,7 +176,7 @@ http://54.237.162.164
 
 ---
 
-# 📊 Final Result
+#  Final Result
 
 ✔ EC2 instance accessible from internet
 ✔ Nginx server responding successfully
