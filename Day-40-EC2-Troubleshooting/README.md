@@ -185,7 +185,7 @@ http://54.237.162.164
 
 ---
 
-# 💡 Key Learnings
+#  Key Learnings
 
 * EC2 accessibility depends heavily on VPC networking
 * Route tables control traffic flow to Internet Gateway
@@ -195,25 +195,10 @@ http://54.237.162.164
 
 ---
 
-# 🏁 Conclusion
+#  Conclusion
 
 This lab demonstrates a real-world DevOps troubleshooting scenario where application-level health was correct, but networking misconfiguration blocked external access.
 
-Fixing VPC routing restored full internet connectivity to the EC2-hosted application.
 
 ---
 
-# 🏷️ Tags
-
-#AWS #EC2 #VPC #DevOps #CloudComputing #Linux #Networking #100DaysOfCloud #AWSProjects #Troubleshooting #LearningByDoing 🚀
-
----
-
-If you want next, I can also create:
-
-✅ Day 40 LinkedIn Post
-✅ Interview Q&A from this lab
-✅ DevOps troubleshooting cheat sheet
-✅ Portfolio-ready project diagram
-
-Just tell me 👍
