@@ -1,7 +1,6 @@
-Here is your **complete professional GitHub README.md for Day 40 (Step-by-Step 
-# 🚀 Day 40: Troubleshooting Internet Accessibility for an EC2-Hosted Application
+#  Day 40: Troubleshooting Internet Accessibility for an EC2-Hosted Application
 
-## 📌 Project Overview
+## Project Overview
 
 This lab focuses on troubleshooting a real-world issue where an application hosted on **Amazon EC2** is not accessible from the internet, even though the application (Nginx) is running correctly.
 
@@ -9,7 +8,7 @@ The root cause lies in the networking layer of **Amazon VPC**, requiring proper 
 
 ---
 
-# 🎯 Objective
+#  Objective
 
 * Diagnose EC2 connectivity issues
 * Fix VPC misconfiguration blocking internet access
@@ -18,7 +17,7 @@ The root cause lies in the networking layer of **Amazon VPC**, requiring proper 
 
 ---
 
-# 🧠 Architecture Understanding
+# Architecture Understanding
 
 ```id="0i7d8s"
 Internet
@@ -34,7 +33,7 @@ EC2 Instance (Nginx Server)
 
 ---
 
-# ⚙️ Prerequisites
+#  Prerequisites
 
 * AWS Account (Lab provided credentials)
 * EC2 instance running
@@ -44,7 +43,7 @@ EC2 Instance (Nginx Server)
 
 ---
 
-# 🛠️ Step-by-Step Lab Implementation
+#  Step-by-Step Lab Implementation
 
 ---
 
