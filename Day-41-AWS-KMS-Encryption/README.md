@@ -1,81 +1,98 @@
-# Day-41-AWS-KMS-Encryption
-✅ **Perfect — your lab is going correctly.**
-You have successfully completed **Step 1 & Step 2**.
 
-Let’s verify and continue **NEXT STEP** 👇
+
+#  Day 41: Encrypting and Decrypting Data Using AWS KMS
+
+##  Project Overview
+
+This project demonstrates how to securely encrypt and decrypt sensitive data using
+**AWS Key Management Service (KMS)** in a real DevOps workflow.
+
+We create a customer-managed KMS key, encrypt a file using AWS CLI, and decrypt it back to verify data integrity.
 
 ---
 
-# ✅ What You Have Done (Verified)
+## 🎯 Objectives
 
-### ✔ Identity Verified
+* Create a **symmetric KMS key**
+* Configure a **key alias**
+* Encrypt sensitive data using AWS KMS
+* Store encrypted output securely
+* Decrypt data using the same key
+* Validate original vs decrypted data integrity
+
+---
+
+## 🧠 Architecture Diagram
+
+![KMS Architecture](sandbox:/mnt/data/a_clean_flat_infographic_like_readme_style_graph.png)
+
+---
+
+### 🔄 Workflow
+
+```
+Sensitive Data File
+        ↓
+AWS KMS Encrypt Operation
+        ↓
+Encrypted Ciphertext (Base64)
+        ↓
+Stored as EncryptedData.bin
+        ↓
+AWS KMS Decrypt Operation
+        ↓
+Original Data Restored & Verified
+```
+
+---
+
+## ⚙️ Prerequisites
+
+* AWS account with IAM permissions
+* AWS CLI installed & configured
+* Region: `us-east-1`
+* Input file:
+
+```bash
+/root/SensitiveData.txt
+```
+
+---
+
+## 🛠️ Step-by-Step Implementation
+
+---
+
+### 1️⃣ Verify AWS Identity
 
 ```bash
 aws sts get-caller-identity
 ```
 
-✅ Logged in as:
+---
 
+### 2️⃣ Create KMS Key
+
+```bash
+aws kms create-key \
+--description "devops-KMS-Key"
 ```
-kk_labs_user_899454
-```
+
+👉 Save the returned **KeyId**
 
 ---
 
-### ✔ KMS Key Created Successfully
-
-Your Key ID:
-
-```
-296f3d6d-dde0-4296-a40d-c7bc33e3b1e5
-```
-
-Important values:
-
-| Setting  | Status               |
-| -------- | -------------------- |
-| Key Type | Symmetric            |
-| Usage    | ENCRYPT_DECRYPT      |
-| State    | Enabled ✅            |
-| Manager  | Customer Managed Key |
-
-👉 **Lab requirement satisfied**.
-
----
-
-# 🚀 NEXT STEP — Create Alias (VERY IMPORTANT)
-
-Labs usually validate using **alias**, not raw key ID.
-
-Run:
+### 3️⃣ Create Key Alias
 
 ```bash
 aws kms create-alias \
 --alias-name alias/devops-KMS-Key \
---target-key-id 296f3d6d-dde0-4296-a40d-c7bc33e3b1e5
-```
-
-✅ No output = Success.
-
----
-
-# ✅ Verify Alias (Optional Check)
-
-```bash
-aws kms list-aliases
-```
-
-You should see:
-
-```
-alias/devops-KMS-Key
+--target-key-id <KEY_ID>
 ```
 
 ---
 
-# 🚀 NEXT STEP — Encrypt File
-
-Now encrypt the sensitive file:
+### 4️⃣ Encrypt the File
 
 ```bash
 aws kms encrypt \
@@ -88,22 +105,15 @@ aws kms encrypt \
 
 ---
 
-# ✅ Check File Created
+### 5️⃣ Verify Encrypted File
 
 ```bash
 ls -l /root/
 ```
 
-Expected:
-
-```
-SensitiveData.txt
-EncryptedData.bin
-```
-
 ---
 
-# 🚀 NEXT STEP — Decrypt File
+### 6️⃣ Decrypt the File
 
 ```bash
 aws kms decrypt \
@@ -115,36 +125,77 @@ aws kms decrypt \
 
 ---
 
-# ✅ FINAL VALIDATION
-
-Run:
+### 7️⃣ Validate Integrity
 
 ```bash
 diff /root/SensitiveData.txt /root/DecryptedData.txt
 ```
 
-👉 **No output = Lab Completed Successfully 🎉**
+✔ No output = Success
 
 ---
 
-## 🧠 Why This Matters (Real DevOps Skill)
+## 🔐 Security Highlights
 
-You just performed:
-
-* Customer Managed Encryption
-* Secure File Protection
-* KMS CLI Operations
-* Data Integrity Validation
-
-This is **real Cloud Security / DevSecOps work** 🔐
+* Customer Managed Key (CMK)
+* IAM-based access control
+* Secure encryption/decryption workflow
+* No manual key handling
+* Audit-ready cloud security design
 
 ---
 
-If you want, I can next give you:
+## 🧠 Key Learnings
 
-✅ Day 41 LinkedIn Post
-✅ GitHub README (Professional)
-✅ KMS Architecture Diagram
-✅ Interview Questions from this Lab
+* AWS KMS envelope encryption
+* Secure CLI-based encryption workflow
+* Base64 encoding in cryptographic operations
+* Real-world DevOps security implementation
+* Data integrity verification techniques
 
-Just say 👍.
+---
+
+## 📊 Final Outcome
+
+✔ KMS Key Created
+✔ File Successfully Encrypted
+✔ Ciphertext Stored Securely
+✔ File Decrypted Successfully
+✔ Data Integrity Verified
+
+---
+
+## 🚀 Technologies Used
+
+* Amazon Web Services KMS
+* AWS CLI
+* Linux Shell
+* Base64 Encoding
+* DevOps Security Practices
+
+---
+
+## 📂 Repository Link
+
+🔗 [https://lnkd.in/dq_TR453](https://lnkd.in/dq_TR453)
+
+---
+
+## 🏁 Conclusion
+
+This lab demonstrates how DevOps engineers can implement **secure, scalable, and production-grade encryption workflows** using AWS-native services.
+
+---
+
+## 🏷️ Tags
+
+`#AWS` `#KMS` `#CloudSecurity` `#DevOps` `#Encryption` `#100DaysOfCloud` `#AWSCLI`
+
+---
+
+If you want next upgrade, I can also help you create:
+
+🚀 GitHub pinned repo strategy (to attract recruiters)
+🚀 Full DevOps portfolio landing page
+🚀 Resume bullet points for this KMS project
+🚀 LinkedIn viral post version (high engagement format)
