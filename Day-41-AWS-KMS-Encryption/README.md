@@ -11,7 +11,7 @@ We create a customer-managed KMS key, encrypt a file using AWS CLI, and decrypt 
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 
 * Create a **symmetric KMS key**
 * Configure a **key alias**
@@ -22,11 +22,6 @@ We create a customer-managed KMS key, encrypt a file using AWS CLI, and decrypt 
 
 ---
 
-## 🧠 Architecture Diagram
-
-![KMS Architecture](sandbox:/mnt/data/a_clean_flat_infographic_like_readme_style_graph.png)
-
----
 
 ### 🔄 Workflow
 
@@ -46,12 +41,13 @@ Original Data Restored & Verified
 
 ---
 
-## ⚙️ Prerequisites
+##  Prerequisites
 
 * AWS account with IAM permissions
 * AWS CLI installed & configured
 * Region: `us-east-1`
 * Input file:
+
 
 ```bash
 /root/SensitiveData.txt
@@ -59,11 +55,11 @@ Original Data Restored & Verified
 
 ---
 
-## 🛠️ Step-by-Step Implementation
+##  Step-by-Step Implementation
 
 ---
 
-### 1️⃣ Verify AWS Identity
+### 1️ Verify AWS Identity
 
 ```bash
 aws sts get-caller-identity
@@ -71,18 +67,18 @@ aws sts get-caller-identity
 
 ---
 
-### 2️⃣ Create KMS Key
+### 2️ Create KMS Key
 
 ```bash
 aws kms create-key \
 --description "devops-KMS-Key"
 ```
 
-👉 Save the returned **KeyId**
+ Save the returned **KeyId**
 
 ---
 
-### 3️⃣ Create Key Alias
+### Create Key Alias
 
 ```bash
 aws kms create-alias \
