@@ -88,7 +88,7 @@ aws kms create-alias \
 
 ---
 
-### 4️⃣ Encrypt the File
+###  Encrypt the File
 
 ```bash
 aws kms encrypt \
@@ -101,7 +101,7 @@ aws kms encrypt \
 
 ---
 
-### 5️⃣ Verify Encrypted File
+### 5 Verify Encrypted File
 
 ```bash
 ls -l /root/
@@ -109,7 +109,7 @@ ls -l /root/
 
 ---
 
-### 6️⃣ Decrypt the File
+###  Decrypt the File
 
 ```bash
 aws kms decrypt \
@@ -121,7 +121,7 @@ aws kms decrypt \
 
 ---
 
-### 7️⃣ Validate Integrity
+###  Validate Integrity
 
 ```bash
 diff /root/SensitiveData.txt /root/DecryptedData.txt
@@ -131,7 +131,7 @@ diff /root/SensitiveData.txt /root/DecryptedData.txt
 
 ---
 
-## 🔐 Security Highlights
+##  Security Highlights
 
 * Customer Managed Key (CMK)
 * IAM-based access control
@@ -141,7 +141,7 @@ diff /root/SensitiveData.txt /root/DecryptedData.txt
 
 ---
 
-## 🧠 Key Learnings
+## Key Learnings
 
 * AWS KMS envelope encryption
 * Secure CLI-based encryption workflow
@@ -151,7 +151,7 @@ diff /root/SensitiveData.txt /root/DecryptedData.txt
 
 ---
 
-## 📊 Final Outcome
+##  Final Outcome
 
 ✔ KMS Key Created
 ✔ File Successfully Encrypted
@@ -161,37 +161,9 @@ diff /root/SensitiveData.txt /root/DecryptedData.txt
 
 ---
 
-## 🚀 Technologies Used
 
-* Amazon Web Services KMS
-* AWS CLI
-* Linux Shell
-* Base64 Encoding
-* DevOps Security Practices
-
----
-
-## 📂 Repository Link
-
-🔗 [https://lnkd.in/dq_TR453](https://lnkd.in/dq_TR453)
-
----
-
-## 🏁 Conclusion
+##  Conclusion
 
 This lab demonstrates how DevOps engineers can implement **secure, scalable, and production-grade encryption workflows** using AWS-native services.
 
 ---
-
-## 🏷️ Tags
-
-`#AWS` `#KMS` `#CloudSecurity` `#DevOps` `#Encryption` `#100DaysOfCloud` `#AWSCLI`
-
----
-
-If you want next upgrade, I can also help you create:
-
-🚀 GitHub pinned repo strategy (to attract recruiters)
-🚀 Full DevOps portfolio landing page
-🚀 Resume bullet points for this KMS project
-🚀 LinkedIn viral post version (high engagement format)
