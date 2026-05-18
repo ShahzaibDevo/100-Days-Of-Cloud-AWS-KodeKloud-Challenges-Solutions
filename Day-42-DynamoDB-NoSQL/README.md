@@ -27,7 +27,7 @@ It stores data in **key-value and document format** and is designed for:
 
 ---
 
-## 🏗️ Project Objective
+## Project Objective
 
 Create a DynamoDB table to manage a simple **To-Do application**, where each task has:
 
@@ -53,7 +53,7 @@ Create a DynamoDB table to manage a simple **To-Do application**, where each tas
 
 ---
 
-## 🚀 Step-by-Step Implementation
+##  Step-by-Step Implementation
 
 ### Step 1: Create DynamoDB Table
 1. Open AWS Management Console
@@ -70,7 +70,7 @@ Create a DynamoDB table to manage a simple **To-Do application**, where each tas
 
 Go to **Explore items → Create item (JSON view)**
 
-#### 📌 Task 1
+####  Task 1
 ```json
 {
   "taskId": "1",
@@ -79,7 +79,7 @@ Go to **Explore items → Create item (JSON view)**
 }
 ````
 
-#### 📌 Task 2
+#### Task 2
 
 ```json
 {
@@ -96,6 +96,7 @@ Go to **Explore items → Create item (JSON view)**
 Run a scan operation in DynamoDB:
 
 ```bash
+
 aws dynamodb scan --table-name nautilus-tasks
 ```
 
@@ -106,7 +107,7 @@ You should see:
 
 ---
 
-## 📊 Expected Output
+##  Expected Output
 
 * Table created successfully
 * 2 tasks inserted
