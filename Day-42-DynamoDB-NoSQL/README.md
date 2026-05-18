@@ -1,11 +1,7 @@
-Here’s a **complete GitHub `README.md` file** for your **Day 42 DynamoDB Lab** with theory + step-by-step guide + clean DevOps formatting.
 
----
+#  Day 42: Building and Managing NoSQL Databases with Amazon DynamoDB
 
-````md
-# 🚀 Day 42: Building and Managing NoSQL Databases with Amazon DynamoDB
-
-## 📌 Overview
+##  Overview
 
 This project is part of my **100 Days of Cloud (AWS) journey**.  
 In this lab, I built and managed a simple NoSQL database using **Amazon DynamoDB** to store task data for a To-Do application.
@@ -22,7 +18,7 @@ It stores data in **key-value and document format** and is designed for:
 - Fully serverless architecture
 - Automatic scaling and high availability
 
-### 🔑 Key Features:
+###  Key Features:
 - No server management required
 - Schema-less database design
 - Built-in security and backup options
