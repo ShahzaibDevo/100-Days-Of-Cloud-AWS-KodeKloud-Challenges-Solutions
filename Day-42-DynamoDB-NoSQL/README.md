@@ -126,30 +126,8 @@ You should see:
 
 ---
 
-## 🚀 Conclusion
+##  Conclusion
 
 This lab helped me understand how AWS DynamoDB simplifies database management by removing server overhead and providing a highly scalable NoSQL solution.
 
 ---
-
-## 🔥 Author
-
-**Shahzaib Ch**
-💻 DevOps & Cloud Engineer (Learning Path)
-🚀 100 Days of Cloud (AWS)
-
----
-
-## 📌 Tags
-
-`#AWS` `#DynamoDB` `#NoSQL` `#CloudComputing` `#DevOps` `#100DaysOfCloud` `#Serverless`
-
-```
-
----
-
-If you want next upgrade, I can also create:
-🔥 :contentReference[oaicite:0]{index=0}  
-🔥 :contentReference[oaicite:1]{index=1}  
-🔥 :contentReference[oaicite:2]{index=2}
-```
