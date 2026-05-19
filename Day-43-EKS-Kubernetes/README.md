@@ -167,26 +167,3 @@ Used by:
 ✔ Production-ready Kubernetes foundation ready
 
 ---
-
-
-# 🌱 Author
-
-👤 DevOps Learning Journey — Day 43
-🚀 Focus: AWS | Kubernetes | DevOps | Cloud Engineering
-
----
-
-# 📎 License
-
-This project is for learning purposes as part of a DevOps hands-on lab.
-
----
-
-If you want, I can also create:
-
-✅ GitHub repo folder structure
-✅ kubectl deployment (nginx app)
-✅ CI/CD pipeline on EKS
-✅ Terraform version of this lab
-
-Just tell me 👍
