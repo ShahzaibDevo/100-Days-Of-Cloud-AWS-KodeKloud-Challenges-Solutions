@@ -65,7 +65,7 @@ Set:
 * Cluster Name → `nautilus-eks`
 * Kubernetes Version → `1.30`
 * Cluster IAM Role → `eksClusterRole`
-* Auto Mode → ❌ Disabled
+* Auto Mode →  Disabled
 
 ---
 
@@ -139,7 +139,7 @@ Used by:
 
 ---
 
-# ⚠️ Key Challenges Faced
+# Key Challenges Faced
 
 * IAM `iam:PassRole` permission errors
 * Confusion between Auto Mode vs Standard EKS
