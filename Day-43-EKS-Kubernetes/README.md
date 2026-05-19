@@ -158,7 +158,7 @@ Used by:
 
 ---
 
-# 🚀 Result
+#  Result
 
 ✔ EKS cluster successfully created
 ✔ Secure private endpoint configured
@@ -168,15 +168,6 @@ Used by:
 
 ---
 
-# 📌 Tech Stack
-
-* AWS EKS
-* Kubernetes (1.30)
-* IAM (Identity & Access Management)
-* VPC Networking
-* EC2 (Node Groups)
-
----
 
 # 🌱 Author
 
