@@ -1,14 +1,11 @@
-Here is a **complete, clean, GitHub-ready README.md** for your **EKS Lab (Day 43)** with simple explanation + full steps + DevOps style formatting:
-
----
 
 # ☸️ Day 43 — Amazon EKS Cluster Deployment (nautilus-eks)
 
-🚀 This project demonstrates how to create and configure a **production-style Kubernetes cluster using Amazon EKS** with secure networking, IAM roles, and multi-AZ architecture.
+This project demonstrates how to create and configure a **production-style Kubernetes cluster using Amazon EKS** with secure networking, IAM roles, and multi-AZ architecture.
 
 ---
 
-# 📌 What is Amazon EKS?
+#  What is Amazon EKS?
 
 **Amazon Elastic Kubernetes Service (EKS)** is a managed Kubernetes service by AWS that allows you to run Kubernetes without managing the control plane.
 
@@ -57,7 +54,7 @@ User → AWS Console → EKS Cluster (Control Plane)
 
 Go to:
 
-👉 Amazon EKS → Create Cluster → Custom Configuration
+ Amazon EKS → Create Cluster → Custom Configuration
 
 ---
 
