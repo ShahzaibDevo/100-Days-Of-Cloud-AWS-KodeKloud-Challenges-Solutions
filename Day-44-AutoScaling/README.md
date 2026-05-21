@@ -1,6 +1,6 @@
 # ☁️ AWS Auto Scaling + ALB Lab (Day 44)
 
-## 📌 Project Overview
+##  Project Overview
 
 This lab demonstrates how to build a **highly available and scalable web application** using AWS services. The architecture automatically scales EC2 instances based on CPU load and distributes traffic using an Application Load Balancer (ALB).
 
@@ -158,7 +158,3 @@ This lab demonstrates real-world cloud architecture principles:
 * Load balancing
 
 ---
-
-## 🏷️ Tags
-
-#AWS #DevOps #CloudComputing #AutoScaling #ALB #EC2 #Nginx #Infrastructure #SRE #100DaysOfCloud
