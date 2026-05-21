@@ -158,6 +158,3 @@ This lab demonstrates real-world cloud architecture principles:
 * Load balancing
 
 ---
-Yesterday I practiced English for communication skills.
-I watched educational videos and practiced storytelling.
-At first, speaking felt difficult, but gradually I became more confident.”
