@@ -391,17 +391,6 @@ The private EC2 instance successfully:
 
 ---
 
-# 🚨 Common Issues & Troubleshooting
-
-## ❌ NAT Gateway Stuck in Pending
-
-Solution:
-
-* Wait a few minutes
-* Verify subnet is public
-* Verify IGW is attached
-
----
 
 ## ❌ EC2 Cannot Access Internet
 
