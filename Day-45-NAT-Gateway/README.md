@@ -392,23 +392,6 @@ The private EC2 instance successfully:
 ---
 
 
-## ❌ EC2 Cannot Access Internet
-
-Check:
-
-* NAT Gateway status = Available
-* Private route table configured correctly
-* Route: 0.0.0.0/0 → NAT Gateway
-* Public subnet associated with public route table
-* Internet Gateway attached to VPC
-
----
-
-## ❌ S3 File Not Appearing
-
-Wait 2–3 minutes because the upload uses a cron job.
-
----
 
 # 💡 Real-World Production Use Cases
 
