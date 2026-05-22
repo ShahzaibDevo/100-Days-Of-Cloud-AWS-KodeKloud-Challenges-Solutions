@@ -1,6 +1,6 @@
 # ☁️ Day 45 — Configure NAT Gateway for Internet Access in a Private VPC
 
-## 📌 Project Overview
+##  Project Overview
 
 In this lab, we configured secure internet access for an EC2 instance running inside a private subnet using a NAT Gateway in AWS.
 
@@ -116,7 +116,7 @@ The NAT Gateway requires an Elastic IP to communicate with the internet.
 
 # 🏗️ Architecture Flow
 
-## 📌 Network Architecture
+##  Network Architecture
 
 ```text
                 Internet
