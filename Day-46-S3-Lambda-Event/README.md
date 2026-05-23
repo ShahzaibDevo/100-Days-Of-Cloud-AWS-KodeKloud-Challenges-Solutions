@@ -1,14 +1,3 @@
-Below is a **complete GitHub-ready lab documentation file** (README.md style) with:
-
-* ✔ Full workflow
-* ✔ Simple theory
-* ✔ Step-by-step AWS UI + CLI flow
-* ✔ Architecture
-* ✔ Validation steps
-
-You can directly copy this into GitHub.
-
----
 
 # 📘 AWS DevOps Lab — S3 to S3 Copy using Lambda + DynamoDB Logging
 
@@ -28,6 +17,7 @@ Build a serverless system where:
 * Logs are stored in **DynamoDB**
 
 ---
+
 
 # 🏗️ Architecture
 
@@ -54,7 +44,7 @@ DynamoDB Table (datacenter-S3CopyLogs)
 
 ---
 
-# 📌 Step-by-Step Implementation
+#  Step-by-Step Implementation
 
 ---
 
