@@ -62,7 +62,7 @@ DynamoDB (datacenter-S3CopyLogs)
 
 ---
 
-# 📌 STEP 1 — CREATE PUBLIC S3 BUCKET (UI)
+#  STEP 1 — CREATE PUBLIC S3 BUCKET (UI)
 
 Go to S3 Console → Create bucket
 
@@ -89,7 +89,7 @@ us-east-1
 
 ---
 
-# 📌 STEP 2 — CREATE PRIVATE S3 BUCKET
+#  STEP 2 — CREATE PRIVATE S3 BUCKET
 
 * Bucket name:
 
@@ -105,7 +105,7 @@ datacenter-private-18753
 
 ---
 
-# 📌 STEP 3 — CREATE DYNAMODB TABLE
+#  STEP 3 — CREATE DYNAMODB TABLE
 
 * Table name:
 
@@ -123,7 +123,7 @@ LogID (String)
 
 ---
 
-# 📌 STEP 4 — CREATE IAM ROLE FOR LAMBDA
+#  STEP 4 — CREATE IAM ROLE FOR LAMBDA
 
 Create Role → AWS Service → Lambda
 
@@ -141,7 +141,7 @@ lambda_execution_role
 
 ---
 
-# 📌 STEP 5 — CREATE LAMBDA FUNCTION
+#  STEP 5 — CREATE LAMBDA FUNCTION
 
 * Function name:
 
@@ -165,7 +165,7 @@ lambda_execution_role
 
 ---
 
-# 📌 STEP 6 — UPDATE LAMBDA CODE
+#  STEP 6 — UPDATE LAMBDA CODE
 
 Open file:
 
@@ -209,7 +209,7 @@ datacenter-private-18753
 
 ---
 
-# 📌 STEP 7 — ADD S3 TRIGGER
+#  STEP 7 — ADD S3 TRIGGER
 
 Inside Lambda:
 
@@ -221,7 +221,7 @@ Inside Lambda:
 
 ---
 
-# 📌 STEP 8 — TEST UPLOAD
+#  STEP 8 — TEST UPLOAD
 
 ```bash
 aws s3 cp sample.zip s3://datacenter-public-15676/
@@ -229,7 +229,7 @@ aws s3 cp sample.zip s3://datacenter-public-15676/
 
 ---
 
-# 📌 STEP 9 — VERIFY OUTPUT
+#  STEP 9 — VERIFY OUTPUT
 
 ## ✔ Private Bucket
 
