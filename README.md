@@ -1,41 +1,23 @@
 <div align="center">
 
-```
- ██████╗██╗      ██████╗ ██╗   ██╗██████╗
-██╔════╝██║     ██╔═══██╗██║   ██║██╔══██╗
-██║     ██║     ██║   ██║██║   ██║██║  ██║
-██║     ██║     ██║   ██║██║   ██║██║  ██║
-╚██████╗███████╗╚██████╔╝╚██████╔╝██████╔╝
- ╚═════╝╚══════╝ ╚═════╝  ╚═════╝ ╚═════╝
-```
-
 # ☁️ 100 Days of Cloud — AWS
 
-**A structured, hands-on AWS challenge completed one practical task per day.**
+### Hands-on AWS from zero to cloud-native — one lab per day.
 
 ![Days](https://img.shields.io/badge/Days-50%2F50-brightgreen?style=flat-square&logo=amazonaws&logoColor=white)
-![Tasks](https://img.shields.io/badge/Tasks%20Completed-50-success?style=flat-square)
+![Labs](https://img.shields.io/badge/Labs%20Completed-50-success?style=flat-square)
 ![Platform](https://img.shields.io/badge/Platform-KodeKloud-blue?style=flat-square)
 ![Started](https://img.shields.io/badge/Started-2026--03--08-orange?style=flat-square)
-![Completed](https://img.shields.io/badge/Completed-2026--05--24-teal?style=flat-square)
-![Status](https://img.shields.io/badge/Status-✅%20Complete-brightgreen?style=flat-square)
+![Completed](https://img.shields.io/badge/Completed-2026--05--24-informational?style=flat-square)
+![Status](https://img.shields.io/badge/Status-%E2%9C%85%20Complete-brightgreen?style=flat-square)
 
 </div>
 
 ---
 
-## 📌 About This Challenge
+## 👤 About
 
-> A 50-task, hands-on AWS journey built on the [KodeKloud — 100 Days of Cloud (AWS)](https://learn.kodekloud.com) program.
-> Every task was completed in a real AWS environment — no simulations, no shortcuts.
-
-| | |
-|---|---|
-| **Platform** | KodeKloud — 100 Days of Cloud (AWS) |
-| **Started** | 2026-03-08 |
-| **Completed** | 2026-05-24 |
-| **Total Tasks** | 50 / 50 ✅ |
-| **Total Labs** | 50 |
+50 practical AWS labs completed on the [KodeKloud — 100 Days of Cloud](https://learn.kodekloud.com) program, covering core services from EC2 and IAM through to EKS, Lambda, and CloudFormation. Every lab was executed in a live AWS environment with real infrastructure — no sandboxes, no shortcuts. This repository documents the full journey as proof of consistent, hands-on cloud practice.
 
 ---
 
