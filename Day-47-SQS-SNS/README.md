@@ -393,15 +393,3 @@ High-priority messages are always processed first, confirming correct priority o
 **SQS Queue Policies** must explicitly grant SNS permission to call `SQS:SendMessage` on the queue. Without this policy, SNS cannot deliver messages to SQS even if the subscription exists.
 
 ---
-
-## Tech Stack
-
-- AWS SQS
-- AWS SNS
-- AWS Lambda
-- AWS CloudFormation
-- AWS IAM
-- Python 3.9
-- AWS CLI
-
----
