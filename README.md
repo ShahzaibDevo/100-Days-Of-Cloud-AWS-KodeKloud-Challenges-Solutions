@@ -67,29 +67,29 @@ AMI            Elastic-IP     ENI            Snapshots      Key-Pairs
 
 ### 🟢 Week 1 — Foundations
 
-| # | Task | Date | Status |
-|---|------|------|--------|
-| 01 | Create Key Pair | 2026-03-08 | ✅ Done |
-| 02 | Create Security Group | 2026-03-09 | ✅ Done |
-| 03 | Create Subnet | 2026-03-10 | ✅ Done |
-| 04 | Enable Versioning for S3 Bucket | 2026-03-11 | ✅ Done |
-| 05 | Create GP3 Volume | 2026-03-12 | ✅ Done |
-| 06 | Launch EC2 Instance | 2026-03-13 | ✅ Done |
-| 07 | Change EC2 Instance Type | 2026-03-14 | ✅ Done |
+| # | Task | Status |
+|---|------|--------|
+| 01 | Create Key Pair | ✅ Done |
+| 02 | Create Security Group | ✅ Done |
+| 03 | Create Subnet | ✅ Done |
+| 04 | Enable Versioning for S3 Bucket | ✅ Done |
+| 05 | Create GP3 Volume | ✅ Done |
+| 06 | Launch EC2 Instance | ✅ Done |
+| 07 | Change EC2 Instance Type | ✅ Done |
 
 ---
 
 ### 🟢 Week 2 — EC2 Deep Dive
 
-| # | Task | Date | Status |
-|---|------|------|--------|
-| 08 | Enable Stop Protection for EC2 Instance | 2026-03-16 | ✅ Done |
-| 09 | Enable Termination Protection for EC2 Instance | 2026-03-17 | ✅ Done |
-| 10 | Attach Elastic IP to EC2 Instance | 2026-03-18 | ✅ Done |
-| 11 | Attach Elastic Network Interface to EC2 Instance | 2026-03-26 | ✅ Done |
-| 12 | Attach Volume to EC2 Instance | 2026-04-01 | ✅ Done |
-| 13 | Create AMI from EC2 Instance | 2026-04-06 | ✅ Done |
-| 14 | Terminate EC2 Instance | 2026-04-07 | ✅ Done |
+| # | Task | Status |
+|---|------|--------|
+| 08 | Enable Stop Protection for EC2 Instance | ✅ Done |
+| 09 | Enable Termination Protection for EC2 Instance | ✅ Done |
+| 10 | Attach Elastic IP to EC2 Instance | ✅ Done |
+| 11 | Attach Elastic Network Interface to EC2 Instance | ✅ Done |
+| 12 | Attach Volume to EC2 Instance | ✅ Done |
+| 13 | Create AMI from EC2 Instance | ✅ Done |
+| 14 | Terminate EC2 Instance | ✅ Done |
 
 ---
 
