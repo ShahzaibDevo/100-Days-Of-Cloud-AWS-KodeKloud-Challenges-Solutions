@@ -266,6 +266,7 @@ Outputs:
 
 ### Step 1: Create the CloudFormation template
 
+
 ```bash
 nano /root/nautilus-priority-stack.yml
 # Paste the template above, then Ctrl+O → Enter → Ctrl+X
@@ -333,6 +334,7 @@ aws sns publish --topic-arn $topicarn \
   --message-attributes '{"priority":{"DataType":"String","StringValue":"low"}}'
 ```
 
+
 > SNS filter policies automatically route messages to the correct SQS queue based on the `priority` message attribute. No manual routing code is needed.
 
 ### Step 7: Invoke the Lambda function
@@ -351,6 +353,7 @@ for i in 1 2 3 4; do
   sleep 2
 done
 ```
+
 
 ### Step 8: Verify via CloudWatch Logs
 
@@ -402,5 +405,3 @@ High-priority messages are always processed first, confirming correct priority o
 - AWS CLI
 
 ---
-
-> Day 47 of 100 Days of Cloud — Building real-world AWS solutions one day at a time.
