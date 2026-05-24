@@ -380,7 +380,4 @@ High-priority messages are always processed first, confirming correct priority o
 
 ---
 
-## Key Learnings
-
-**SNS Filter Policies** route messages to the correct queue automatically based on message attributes. No application-level routing logic is needed — you just tag messages with `priority=high` or `priority=low`.
 
