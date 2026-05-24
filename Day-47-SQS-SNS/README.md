@@ -74,10 +74,7 @@ It lets you create AWS resources using a **YAML file instead of clicking in cons
 
 ---
 
-If you want, I can also convert this into:
-✔ interview notes
-✔ LinkedIn carousel post
-✔ or cheat sheet PDF 👍
+
 
 
 ## Architecture
@@ -99,21 +96,7 @@ SNS Topic: nautilus-Priority-Queues-Topic
 
 ---
 
-## Resources Created
 
-| Resource | Type | Name |
-|---|---|---|
-| SQS Queue | AWS::SQS::Queue | nautilus-High-Priority-Queue |
-| SQS Queue | AWS::SQS::Queue | nautilus-Low-Priority-Queue |
-| SNS Topic | AWS::SNS::Topic | nautilus-Priority-Queues-Topic |
-| SNS Subscription | AWS::SNS::Subscription | HighPrioritySubscription |
-| SNS Subscription | AWS::SNS::Subscription | LowPrioritySubscription |
-| SQS Queue Policy | AWS::SQS::QueuePolicy | HighPriorityPolicy |
-| SQS Queue Policy | AWS::SQS::QueuePolicy | LowPriorityPolicy |
-| IAM Role | AWS::IAM::Role | lambda_execution_role |
-| Lambda Function | AWS::Lambda::Function | nautilus-priorities-queue-function |
-
----
 
 ## CloudFormation Template
 
