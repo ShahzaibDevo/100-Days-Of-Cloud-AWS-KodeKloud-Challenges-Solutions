@@ -388,8 +388,3 @@ High-priority messages are always processed first, confirming correct priority o
 
 **Lambda Timeout vs SQS WaitTimeSeconds** — the Lambda timeout must always be greater than the SQS `WaitTimeSeconds` (long polling duration). If `WaitTimeSeconds=3` and Lambda timeout is also `3`, the function times out before SQS can return a response. Always set Lambda timeout well above the polling wait time.
 
-**Inline ZipFile in CloudFormation** is the cleanest approach for small Lambda functions. It avoids the need to create an S3 bucket, upload a zip file, and manage that dependency — everything lives in one template.
-
-**SQS Queue Policies** must explicitly grant SNS permission to call `SQS:SendMessage` on the queue. Without this policy, SNS cannot deliver messages to SQS even if the subscription exists.
-
----
