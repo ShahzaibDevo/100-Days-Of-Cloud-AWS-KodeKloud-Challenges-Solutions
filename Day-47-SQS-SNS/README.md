@@ -384,7 +384,3 @@ High-priority messages are always processed first, confirming correct priority o
 
 **SNS Filter Policies** route messages to the correct queue automatically based on message attributes. No application-level routing logic is needed — you just tag messages with `priority=high` or `priority=low`.
 
-**CAPABILITY_NAMED_IAM** must be passed in the CloudFormation deploy command whenever your template creates a named IAM role. Without it, the deployment fails with an InsufficientCapabilities error.
-
-**Lambda Timeout vs SQS WaitTimeSeconds** — the Lambda timeout must always be greater than the SQS `WaitTimeSeconds` (long polling duration). If `WaitTimeSeconds=3` and Lambda timeout is also `3`, the function times out before SQS can return a response. Always set Lambda timeout well above the polling wait time.
-
