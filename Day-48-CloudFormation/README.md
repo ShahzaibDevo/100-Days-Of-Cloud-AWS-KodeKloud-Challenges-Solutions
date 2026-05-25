@@ -138,3 +138,19 @@ Expected output:
 ```
 
 ---
+💡 Important Concepts Learned
+☁️ AWS CloudFormation
+
+Infrastructure as Code (IaC) service used to automate AWS resource deployment.
+
+⚡ AWS Lambda
+
+Serverless compute service that runs code without managing servers.
+
+🔐 IAM Role
+
+Provides permissions for Lambda to write logs and execute securely.
+
+🏗️ Infrastructure Automation
+
+Instead of manual setup, everything is deployed using YAML templates.
