@@ -138,12 +138,3 @@ Expected output:
 ```
 
 ---
-
-## Common Errors & Fixes
-
-| Error | Cause | Fix |
-|---|---|---|
-| `InsufficientCapabilitiesException` | Missing `--capabilities` flag | Add `--capabilities CAPABILITY_NAMED_IAM` |
-| `ResourceNotFoundException` | Wrong function name | Use exact name: `datacenter-lambda` |
-| `Template does not exist` | Wrong filename or path | Use `/root/datacenter-lambda.yml` |
-| `No such file or directory` on cat | Wrong output filename | Match filename used in invoke command |
