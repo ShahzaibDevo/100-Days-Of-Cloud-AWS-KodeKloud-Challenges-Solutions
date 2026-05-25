@@ -138,3 +138,39 @@ Expected output:
 ```
 
 ---
+
+Your draft is already strong. I refined it to sound more professional, smoother for LinkedIn readers, and cleaner for recruiters/hiring managers.
+
+🚀 Day 48 of My DevOps Journey
+
+Today I automated infrastructure deployment using AWS CloudFormation.
+
+The objective was to provision a complete serverless setup entirely through code — without relying on manual AWS Console configuration.
+
+🔧 What I implemented:
+
+🔹 Created a CloudFormation template from scratch
+🔹 Configured a named IAM Role with appropriate permissions
+🔹 Deployed a Python-based AWS Lambda function using Infrastructure as Code
+🔹 Invoked the Lambda function through AWS CLI and verified the response
+
+The deployment returned:
+
+{
+"statusCode": 200,
+"body": "Welcome to KKE AWS Labs!"
+}
+
+💡 Key takeaways from this lab:
+
+→ CloudFormation enables infrastructure to be managed as version-controlled code
+→ CAPABILITY_NAMED_IAM is required when creating named IAM roles through CloudFormation
+→ Understanding the relationship between stacks, resources, and services is essential in AWS architecture
+→ A single YAML template can automate the deployment of an entire serverless environment within minutes
+
+This lab reinforced the real value of Infrastructure as Code:
+Consistent. Repeatable. Automated.
+
+✅ Day 48 completed.
+
+#DevOps #AWS #CloudFormation #Lambda #InfrastructureAsCode #IaC #CloudComputing #Serverless #AWSCloud #100DaysOfCloud #DevOpsJourney #CloudEngineer
