@@ -140,11 +140,7 @@ Expected output:
 ---
 
 
-🚀 Day 48 of My DevOps Journey
 
-Today I automated infrastructure deployment using AWS CloudFormation.
-
-The objective was to provision a complete serverless setup entirely through code — without relying on manual AWS Console configuration.
 
 🔧 What I implemented:
 
