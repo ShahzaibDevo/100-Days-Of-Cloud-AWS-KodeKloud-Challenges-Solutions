@@ -141,4 +141,3 @@ Expected output:
 
 
 
-#DevOps #AWS #CloudFormation #Lambda #InfrastructureAsCode #IaC #CloudComputing #Serverless #AWSCloud #100DaysOfCloud #DevOpsJourney #CloudEngineer
