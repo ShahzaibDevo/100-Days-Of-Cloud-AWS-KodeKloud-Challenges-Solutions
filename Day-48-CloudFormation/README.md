@@ -141,24 +141,4 @@ Expected output:
 
 
 
-
-The deployment returned:
-
-{
-"statusCode": 200,
-"body": "Welcome to KKE AWS Labs!"
-}
-
-💡 Key takeaways from this lab:
-
-→ CloudFormation enables infrastructure to be managed as version-controlled code
-→ CAPABILITY_NAMED_IAM is required when creating named IAM roles through CloudFormation
-→ Understanding the relationship between stacks, resources, and services is essential in AWS architecture
-→ A single YAML template can automate the deployment of an entire serverless environment within minutes
-
-This lab reinforced the real value of Infrastructure as Code:
-Consistent. Repeatable. Automated.
-
-✅ Day 48 completed.
-
 #DevOps #AWS #CloudFormation #Lambda #InfrastructureAsCode #IaC #CloudComputing #Serverless #AWSCloud #100DaysOfCloud #DevOpsJourney #CloudEngineer
