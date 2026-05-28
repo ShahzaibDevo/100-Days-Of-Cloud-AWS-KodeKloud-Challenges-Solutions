@@ -142,13 +142,6 @@ Expected output:
 
 
 
-🔧 What I implemented:
-
-🔹 Created a CloudFormation template from scratch
-🔹 Configured a named IAM Role with appropriate permissions
-🔹 Deployed a Python-based AWS Lambda function using Infrastructure as Code
-🔹 Invoked the Lambda function through AWS CLI and verified the response
-
 The deployment returned:
 
 {
