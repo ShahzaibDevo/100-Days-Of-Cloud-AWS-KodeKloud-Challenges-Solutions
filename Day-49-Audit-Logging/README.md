@@ -166,12 +166,3 @@ datacenter-s3-logs-27578/
 * AWS CLI Automation
 
 ---
-
-## 🚀 Conclusion
-
-This project builds a **production-like centralized logging system** using AWS services with automation, security, and scalability principles.
-
-It simulates real-world DevOps logging pipelines used in enterprise environments.
-
----
-
