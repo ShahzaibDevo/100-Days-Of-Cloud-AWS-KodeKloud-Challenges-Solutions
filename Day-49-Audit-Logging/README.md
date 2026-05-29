@@ -154,15 +154,3 @@ datacenter-s3-logs-27578/
 ```
 
 ---
-
-## 🎯 Key Skills Demonstrated
-
-* AWS VPC Peering
-* EC2 Networking (Public & Private)
-* IAM Role-based Access Control
-* S3 Storage Management
-* Linux Automation (Cron Jobs)
-* Secure File Transfer (SCP)
-* AWS CLI Automation
-
----
