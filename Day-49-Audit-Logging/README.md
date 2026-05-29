@@ -1,8 +1,4 @@
-Here’s your **ready-to-use GitHub `README.md` file** for the project 👇
 
----
-
-```md
 # Day 49: Centralized Audit Logging with VPC Peering (AWS DevOps Project)
 
 ## 🚀 Overview
