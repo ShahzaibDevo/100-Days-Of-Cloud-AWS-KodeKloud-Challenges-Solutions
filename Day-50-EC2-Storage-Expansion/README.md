@@ -1,8 +1,4 @@
-Here is a **complete professional GitHub README.md** with **theory + steps + commands + architecture + learning + clean structure** for your Day 50 lab:
 
----
-
-```md
 # 🚀 Day 50: Expanding EC2 Instance Storage for Development Needs (AWS 100 Days of Cloud)
 
 ## 📘 Overview
