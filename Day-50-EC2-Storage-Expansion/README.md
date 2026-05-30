@@ -184,17 +184,3 @@ It demonstrated how cloud infrastructure and operating systems work together to 
 Special thanks to **KodeKloud** and **Mumshad Mannambeth** for providing structured, hands-on cloud learning through real-world DevOps scenarios.
 
 ---
-
-# #AWS #CloudComputing #DevOps #EC2 #EBS #Linux #CloudEngineer #AmazonWebServices #100DaysOfCloud #Infrastructure #Automation #LearningInPublic 🚀
-
-```
-
----
-
-If you want next level upgrade, I can also:
-- 🔥 :contentReference[oaicite:0]{index=0}
-- 🔥 :contentReference[oaicite:1]{index=1}
-- 🔥 or :contentReference[oaicite:2]{index=2}
-
-Just tell me 👍
-```
