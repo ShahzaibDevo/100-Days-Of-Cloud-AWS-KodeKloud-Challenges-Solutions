@@ -25,10 +25,11 @@
 
 ### AWS Learning Journey Overview
 
+[Cloud Journey Image](https://github.com/ShahzaibDevo/100-Days-Of-Cloud-AWS-KodeKloud-Challenges-Solutions/blob/8b9286fef53c40902b04ef1adf4fdafe20f46142/Cloud-Journey.png)
 
- [View Architecture PDF](https://raw.githubusercontent.com/ShahzaibDevo/100-Days-Of-Cloud-AWS-KodeKloud-Challenges-Solutions/3a5e46f2eaab2e4057e0c5283433980b23b42be4/c9777e80-2048-4ae7-a4e2-654492fb9d04.pdf)
+[View Architecture PDF](https://raw.githubusercontent.com/ShahzaibDevo/100-Days-Of-Cloud-AWS-KodeKloud-Challenges-Solutions/3a5e46f2eaab2e4057e0c5283433980b23b42be4/c9777e80-2048-4ae7-a4e2-654492fb9d04.pdf)
+
 ---
-
 
 ## 📊 Progress
 
