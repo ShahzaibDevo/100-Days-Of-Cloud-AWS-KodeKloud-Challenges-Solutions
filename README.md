@@ -25,7 +25,7 @@
 
 ### AWS Learning Journey Overview
 
-![AWS Architecture](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/aws-reference-architecture-diagrams.9f2a7c8c6e0b1a0f8a3d.png)
+![AWS Architecture](https://raw.githubusercontent.com/ShahzaibDevo/100-Days-Of-Cloud-AWS-KodeKloud-Challenges-Solutions/3a5e46f2eaab2e4057e0c5283433980b23b42be4/c9777e80-2048-4ae7-a4e2-654492fb9d04.pdf)
 
 ---
 
