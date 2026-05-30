@@ -171,8 +171,3 @@ This lab strengthened my understanding of **AWS storage management and Linux sys
 It demonstrated how cloud infrastructure and operating systems work together to manage scalable storage systems.
 
 ---
-
-## 📂 GitHub Repository
-
-🔗 All 100 Days of Cloud Labs:
-[https://github.com/ShahzaibDevo/100-Days-Of-Cloud-AWS-KodeKloud-Challenges-Solutions](https://github.com/ShahzaibDevo/100-Days-Of-Cloud-AWS-KodeKloud-Challenges-Solutions)
