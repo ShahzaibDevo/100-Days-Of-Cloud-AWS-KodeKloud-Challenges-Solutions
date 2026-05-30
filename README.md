@@ -21,6 +21,15 @@
 
 ---
 
+
+
+### AWS Learning Journey Overview
+
+![AWS Architecture](https://d1.awsstatic.com/architecture-diagrams/ArchitectureDiagrams/aws-reference-architecture-diagrams.9f2a7c8c6e0b1a0f8a3d.png)
+
+---
+
+
 ## 📊 Progress
 
 ```
