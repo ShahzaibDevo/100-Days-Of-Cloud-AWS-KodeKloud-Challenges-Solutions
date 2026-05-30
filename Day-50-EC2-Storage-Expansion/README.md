@@ -176,11 +176,3 @@ It demonstrated how cloud infrastructure and operating systems work together to 
 
 🔗 All 100 Days of Cloud Labs:
 [https://github.com/ShahzaibDevo/100-Days-Of-Cloud-AWS-KodeKloud-Challenges-Solutions](https://github.com/ShahzaibDevo/100-Days-Of-Cloud-AWS-KodeKloud-Challenges-Solutions)
-
----
-
-## 🙏 Acknowledgements
-
-Special thanks to **KodeKloud** and **Mumshad Mannambeth** for providing structured, hands-on cloud learning through real-world DevOps scenarios.
-
----
