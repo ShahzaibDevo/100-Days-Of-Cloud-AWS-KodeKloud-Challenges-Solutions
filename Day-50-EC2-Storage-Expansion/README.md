@@ -1,5 +1,5 @@
 
-# 🚀 Day 50: Expanding EC2 Instance Storage for Development Needs (AWS 100 Days of Cloud)
+#  Day 50: Expanding EC2 Instance Storage for Development Needs (AWS 100 Days of Cloud)
 
 ## 📘 Overview
 
@@ -143,7 +143,7 @@ sudo xfs_growfs -d /
 
 ---
 
-## 📌 Key Learnings
+##  Key Learnings
 
 ✔ EBS volume expansion is a **two-step process**
 ✔ AWS increases disk size but OS does NOT auto-update
@@ -153,7 +153,7 @@ sudo xfs_growfs -d /
 
 ---
 
-## 🚀 Real-World Use Case
+##  Real-World Use Case
 
 This concept is widely used in production environments where:
 
