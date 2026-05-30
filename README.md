@@ -24,10 +24,9 @@
 
 ### AWS Learning Journey Overview
 
- A 100-day hands-on journey through AWS cloud fundamentals and beyond.
+A hands-on **100 Days of Cloud (AWS)** challenge completed via **KodeKloud**, covering core AWS services from compute and storage to networking, security, and serverless architecture.
 
-This repo is a complete log of my cloud learning path — from IAM and EC2  
-to S3, Lambda, and beyond. Built with consistency, curiosity, and real  AWS environments.
+Each day includes a real-world task, practical implementation, and key takeaways — building a strong foundation in cloud engineering through consistent daily practice.
 
 ---
 
